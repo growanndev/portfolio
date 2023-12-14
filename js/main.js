@@ -71,11 +71,13 @@ $(function () {
 
   /* con3 기획안 모달박스 */
   $(".plan1").click(function () {
-    $(".modal1").css({ display: "flex" });
+    $(".modal1").css({ display: "block" });
+    $("body").css({ overflowY: "hidden" });
   });
 
   $(".close").click(function () {
     $(".modal-wrap").css({ display: "none" });
+    $("body").css({ overflowY: "auto" });
   });
 
   /* 스크롤 제어 */
