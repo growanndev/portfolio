@@ -2400,7 +2400,7 @@ body.black {
   }
   .wrap .visual > h3 {
     text-align: center;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 200;
     color: #fff;
     opacity: 0;
@@ -2479,11 +2479,11 @@ body.black {
     max-width: 600px;
   }
   .wrap .con1 .con1-content .con1-text p {
-    font-size: 1.2em;
+    font-size: 16px;
     margin: 40px 0px 30px;
   }
   .wrap .con1 .con1-content .con1-text h4 {
-    font-size: 1.4em;
+    font-size: 19px;
     font-weight: 600;
   }
   .wrap .con1 .con1-content .con1-text h4 span {
@@ -2499,23 +2499,23 @@ body.black {
   }
   .wrap .con1 .con1-timeline li {
     width: 20%;
-    transform: translate(-30px, -10px);
+    transform: translate(-30px, -5px);
     opacity: 0;
     transition: 0.5s;
   }
   .wrap .con1 .con1-timeline li .con1-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
     background: #111;
     margin: 0px auto 20px;
   }
   .wrap .con1 .con1-timeline li p {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
   }
   .wrap .con1 .con1-timeline li p span {
-    font-size: 20px;
+    font-size: 17px;
     display: inline-block;
     margin-top: 5px;
   }
@@ -2524,26 +2524,7 @@ body.black {
   }
   .wrap .con1 .con1-timeline li.on {
     opacity: 1;
-    transform: translateY(-10px);
-  }
-  .wrap .con1 .more {
-    width: 240px;
-    margin: 0px auto;
-  }
-  .wrap .con1 .more a {
-    font-size: 2.4em;
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    width: 100%;
-    padding: 10px 0px;
-    border: 1px solid #111;
-    border-radius: 70px;
-    transition: 0.7s;
-  }
-  .wrap .con1 .more a:hover {
-    background: #000;
-    color: #fff;
+    transform: translateY(-5px);
   }
   .wrap .con2 {
     margin-bottom: 100px;
@@ -2561,7 +2542,7 @@ body.black {
     display: inline-block;
     transform: translateY(100%);
     text-transform: uppercase;
-    font-size: 55px;
+    font-size: 60px;
     font-weight: 300;
     transition: 1.3s;
   }
@@ -2575,10 +2556,10 @@ body.black {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding-left: 15vw;
+    align-items: start;
+    padding: 20px 0px 20px 15vw;
     position: relative;
     transition: 1s;
-    /* 이미지 크기 조정 */
     /* 글자 올라오는 효과 */
   }
   .wrap .con2 .skill-list li .skill-bg {
@@ -2596,20 +2577,16 @@ body.black {
     transform: translateY(-3px);
     transition: 1s;
   }
-  .wrap .con2 .skill-list li .scale09 {
-    transform: scale(1);
-  }
   .wrap .con2 .skill-list li h4 {
     font-family: "Marcellus", serif;
     text-transform: uppercase;
     font-size: 20px;
-    line-height: 60px;
     color: #fff;
   }
   .wrap .con2 .skill-list li p {
     display: none;
     opacity: 0;
-    font-size: 18px;
+    font-size: 15px;
     transform: translateY(40px);
     animation: go-up 1s forwards;
   }
@@ -2620,17 +2597,19 @@ body.black {
     }
   }
   .wrap .con2 .skill-list li.active {
-    padding: 40px 5vw 40px 15vw;
+    padding: 40px 7vw 40px 15vw;
   }
   .wrap .con2 .skill-list li.active .skill-bg {
     width: 100%;
   }
   .wrap .con2 .skill-list li.active h4 {
-    margin: 5px 0px;
+    margin: 20px 0px;
     transform: translateX(5px);
   }
   .wrap .con2 .skill-list li.active img {
-    width: 10%;
+    width: 15%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .wrap .con2 .skill-list li.active p {
     display: block;
@@ -2641,7 +2620,7 @@ body.black {
   .wrap .con3 {
     width: 100%;
     position: relative;
-    padding-top: 200px;
+    padding-top: 250px;
     /* 모달박스 공통 적용 */
   }
   .wrap .con3 .con3-main-text {
@@ -2656,21 +2635,21 @@ body.black {
   .wrap .con3 .con3-main-text > h2 {
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: 50px;
+    font-size: 8vw;
     font-weight: 300;
   }
   .wrap .con3 .port-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 130px;
+    gap: 100px;
     /* port-list 스크롤에 따라 on 붙을 때 */
   }
   .wrap .con3 .port-list li {
     width: 80%;
     text-align: center;
     padding-bottom: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.8);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     opacity: 0;
@@ -2714,19 +2693,19 @@ body.black {
     }
   }
   .wrap .con3 .port-list li > h3 {
-    font-size: 2.3em;
+    font-size: 26px;
     margin: 35px 0px 25px;
   }
   .wrap .con3 .port-list li .tag {
-    font-size: 1.3em;
+    font-size: 18px;
     font-weight: 900;
   }
   .wrap .con3 .port-list li .tag span {
-    margin: 0px 15px;
+    margin: 0px 8px;
   }
   .wrap .con3 .port-list li .description {
     width: 60%;
-    font-size: 1.2em;
+    font-size: 15px;
     margin: 15px auto 40px;
   }
   .wrap .con3 .port-list li .btn-wrap {
@@ -2743,7 +2722,7 @@ body.black {
     width: 100%;
     padding: 7px 0px;
     border-radius: 40px;
-    font-size: 1.5em;
+    font-size: 18px;
     border: 1px solid #000;
     background: #fff;
     transition: 0.8s;
@@ -2755,7 +2734,7 @@ body.black {
   .wrap .con3 .port-list li .btn-wrap .plan {
     padding: 7px 0px;
     border-radius: 40px;
-    font-size: 1.5em;
+    font-size: 18px;
     border: 1px solid #000;
     background: #fff;
     transition: 0.8s;
@@ -2816,14 +2795,14 @@ body.black {
   .wrap .con4 {
     width: 100%;
     padding-top: 50px;
-    margin: 150px 0px 150px;
+    margin: 100px 0px 150px;
     /* 스크롤에 따른 효과 */
     /*  artbox 모달박스 공통 적용 */
   }
   .wrap .con4 .con4-main-text {
     width: 70%;
     text-align: right;
-    margin: 0px auto;
+    margin: 0px auto 30px;
   }
   .wrap .con4 .con4-main-text > h2 {
     text-transform: uppercase;
@@ -2835,9 +2814,9 @@ body.black {
     transition: 0.8s;
   }
   .wrap .con4 .con4-main-text > p {
-    font-size: 20px;
+    font-size: 16px;
     overflow: hidden;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   .wrap .con4 .con4-main-text > p span {
     transition: 0.8s 0.5s;
@@ -2847,7 +2826,7 @@ body.black {
     transform: translateY(100%);
   }
   .wrap .con4 .artbox-wrap {
-    height: 60vw;
+    height: 80vw;
     position: relative;
     transition: 0.8s 0.8s;
     /* 각 작업물 크기대로 설정해주면 됨 !!!! */
@@ -2904,7 +2883,6 @@ body.black {
     top: 1vw;
     right: 1vw;
     font-size: 0.8vw;
-    display: none;
   }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .back {
     transform: rotateY(180deg);
@@ -2915,13 +2893,13 @@ body.black {
   .wrap .con4 .artbox-wrap .artbox1,
   .wrap .con4 .artbox-wrap .artbox3,
   .wrap .con4 .artbox-wrap .artbox5 {
-    width: 20vw;
-    height: 24vw;
+    width: 24vw;
+    height: 29vw;
   }
   .wrap .con4 .artbox-wrap .artbox2,
   .wrap .con4 .artbox-wrap .artbox4 {
-    width: 20vw;
-    height: 20vw;
+    width: 24vw;
+    height: 24vw;
   }
   .wrap .con4 .artbox-wrap .artbox1 {
     top: 5vw;
@@ -2959,51 +2937,41 @@ body.black {
     display: none;
     /* 정사각형 작업물 스타일 */
   }
-  .wrap .con4 .modal-wrap:nth-child(even) .modal-content {
-    width: 50%;
-    height: 25vw;
-  }
-  .wrap .con4 .modal-wrap:nth-child(even) .modal-content > img {
-    height: 25vw;
-  }
   .wrap .con4 .modal-wrap .modal-content {
-    width: 50%;
-    height: 35vw;
+    width: 80%;
     margin: 0px auto;
     text-align: center;
     position: relative;
     background: #fff;
-    display: flex;
   }
   .wrap .con4 .modal-wrap .modal-content > img {
-    width: 25vw;
-    height: 35vw;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     display: block;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right {
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5%;
+    padding: 10%;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right p {
-    font-size: 20px;
-    margin-bottom: 40px;
+    font-size: 16px;
+    margin-bottom: 30px;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right img {
-    width: 3vw;
+    width: 8vw;
   }
   .wrap .con4 .modal-wrap .modal-content .close {
     position: absolute;
-    top: 2vw;
-    right: 2vw;
+    top: 6vw;
+    right: 6vw;
     cursor: pointer;
   }
   .wrap .con4 .modal-wrap .modal-content .close img {
-    width: 2vw;
+    width: 5vw;
   }
   .wrap .con5 {
     width: 100%;
@@ -3016,17 +2984,18 @@ body.black {
     justify-content: space-between;
     align-items: center;
     padding: 30px 5vw;
+    gap: 20px;
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
     border-top: 1.5px solid rgba(255, 255, 255, 0.2);
   }
   .wrap .con5 .vision > h2 {
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 300;
     text-transform: uppercase;
   }
   .wrap .con5 .vision p {
     text-align: center;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
   }
   .wrap .con5 .contact {
@@ -3050,7 +3019,7 @@ body.black {
     gap: 20px;
   }
   .wrap .con5 .contact .contact-left li img {
-    width: 30px;
+    width: 20px;
   }
   .wrap .con5 .contact .contact-left li a {
     display: inline-block;
@@ -3061,7 +3030,7 @@ body.black {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   }
   .wrap .con5 .contact .contact-left li span {
-    font-size: 16px;
+    font-size: 1.7vw;
     color: #fff;
   }
   .wrap .con5 .contact .contact-right {
@@ -3079,7 +3048,7 @@ body.black {
   }
   .wrap .con5 .contact .contact-right h2 span {
     text-transform: uppercase;
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 300;
     font-family: "Marcellus", serif;
     display: inline-block;
@@ -3099,7 +3068,7 @@ body.black {
     padding: 0px 20px 20px 0px;
   }
   .wrap .con5 .contact .contact-right p span {
-    font-size: 16px;
+    font-size: 12px;
     display: inline-block;
     text-transform: uppercase;
     text-align: right;

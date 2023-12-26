@@ -2580,7 +2580,7 @@ body.black {
     }
     > h3 {
       text-align: center;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 200;
       color: #fff;
       opacity: 0;
@@ -2666,11 +2666,11 @@ body.black {
       }
       .con1-text {
         p {
-          font-size: 1.2em;
+          font-size: 16px;
           margin:40px 0px 30px;
         }
         h4 {
-          font-size: 1.4em;
+          font-size: 19px;
           font-weight: 600;
           span {
             margin-right: 20px;
@@ -2688,22 +2688,22 @@ body.black {
       justify-content: space-around;
       li {
         width: 20%;
-        transform: translate(-30px, -10px);
+        transform: translate(-30px, -5px);
         opacity: 0;
         transition: 0.5s;
         .con1-circle {
-          width: 20px;
-          height: 20px;
-          border-radius: 20px;
+          width: 15px;
+          height: 15px;
+          border-radius: 15px;
           background: #111;
           margin: 0px auto 20px;
         }
         p {
           // font-size: 1.4em;
-          font-size:18px;
+          font-size:16px;
           text-align: center;
           span{
-            font-size:20px;
+            font-size:17px;
             display:inline-block;
             margin-top:5px;
           }
@@ -2714,26 +2714,7 @@ body.black {
       }
       li.on {
         opacity: 1;
-        transform: translateY(-10px);
-      }
-    }
-    .more {
-      width: 240px;
-      margin: 0px auto;
-      a {
-        font-size: 2.4em;
-        text-align: center;
-        display: block;
-        text-transform: uppercase;
-        width: 100%;
-        padding: 10px 0px;
-        border: 1px solid #111;
-        border-radius: 70px;
-        transition: 0.7s;
-        &:hover {
-          background: #000;
-          color: #fff;
-        }
+        transform: translateY(-5px);
       }
     }
   }
@@ -2756,7 +2737,7 @@ body.black {
         display: inline-block;
         transform: translateY(100%);
         text-transform: uppercase;
-        font-size:55px;
+        font-size:60px;
         font-weight: 300;
         transition: 1.3s;
       }
@@ -2772,8 +2753,8 @@ body.black {
         display: flex;
         flex-direction:column;
         justify-content:start;
-        padding-left: 15vw;
-        
+        align-items:start;
+        padding:20px 0px 20px 15vw;
         position: relative;
         transition: 1s;
         .skill-bg {
@@ -2793,22 +2774,17 @@ body.black {
           transition: 1s;
           // display:none;
         }
-        /* 이미지 크기 조정 */
-        .scale09 {
-          transform: scale(1);
-        }
         h4 {
           font-family: "Marcellus", serif;
           text-transform: uppercase;
           font-size: 20px;
-          line-height:60px;
           // margin: 0px 7vw;
           color: #fff;
         }
         p {
           display: none;
           opacity: 0;
-          font-size:18px;
+          font-size:15px;
           transform: translateY(40px);
           animation: go-up 1s forwards;
         }
@@ -2823,17 +2799,18 @@ body.black {
       /* 요소에 마우스를 올려놓았을 때 효과*/
       li.active {
         // height: 130px;
-        padding:40px 5vw 40px 15vw;
+        padding:40px 7vw 40px 15vw;
       }
       li.active .skill-bg {
         width: 100%;
       }
       li.active h4{
-        margin:5px 0px;
+        margin:20px 0px;
         transform:translateX(5px);
       }
       li.active img {
-        width: 10%;
+        width: 15%;
+        object-fit:cover;
       }
       li.active p {
         display: block;
@@ -2850,7 +2827,7 @@ body.black {
   .con3 {
     width: 100%;
     position: relative;
-    padding-top: 200px;
+    padding-top: 250px;
 
     .con3-main-text {
       text-align: center;
@@ -2863,7 +2840,7 @@ body.black {
       > h2 {
         text-transform: uppercase;
         margin-bottom: 10px;
-        font-size:50px;
+        font-size:8vw;
         font-weight: 300;
       }
     }
@@ -2871,12 +2848,12 @@ body.black {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 130px;
+      gap: 100px;
       li {
         width: 80%;
         text-align: center;
         padding-bottom: 20px;
-        background: rgba(255, 255, 255, 0.9);
+        background: rgba(255, 255, 255, 0.8);
         backdrop-filter: blur(5px);
         opacity: 0;
         transition: 1.5s;
@@ -2921,19 +2898,19 @@ body.black {
           }
         }
         > h3 {
-          font-size: 2.3em;
+          font-size: 26px;
           margin: 35px 0px 25px;
         }
         .tag {
-          font-size: 1.3em;
+          font-size: 18px;
           font-weight: 900;
           span {
-            margin: 0px 15px;
+            margin: 0px 8px;
           }
         }
         .description {
           width: 60%;
-          font-size: 1.2em;
+          font-size: 15px;
           margin: 15px auto 40px;
         }
         .btn-wrap {
@@ -2948,7 +2925,7 @@ body.black {
               width: 100%;
               padding: 7px 0px;
               border-radius: 40px;
-              font-size: 1.5em;
+              font-size: 18px;
               border: 1px solid #000;
               background: #fff;
               transition: 0.8s;
@@ -2964,7 +2941,7 @@ body.black {
           .plan {
             padding: 7px 0px;
             border-radius: 40px;
-            font-size: 1.5em;
+            font-size: 18px;
             border: 1px solid #000;
             background: #fff;
             transition: 0.8s;
@@ -3044,7 +3021,7 @@ body.black {
   .con4 {
     width: 100%;
     padding-top: 50px;
-    margin: 150px 0px 150px;
+    margin: 100px 0px 150px;
 
     .con4-main-text {
       width: 70%;
@@ -3052,7 +3029,7 @@ body.black {
       // display: flex;
       // justify-content: space-between;
       // align-items: end;
-      margin: 0px auto;
+      margin: 0px auto 30px;
       > h2 {
         text-transform: uppercase;
         font-size: 40px;
@@ -3064,9 +3041,9 @@ body.black {
         }
       }
       > p {
-        font-size: 20px;
+        font-size: 16px;
         overflow: hidden;
-        margin-top:10px;
+        margin-top:5px;
         span {
           transition: 0.8s 0.5s;
         }
@@ -3077,7 +3054,7 @@ body.black {
       }
     }
     .artbox-wrap {
-      height: 60vw;
+      height: 80vw;
       position: relative;
       transition: 0.8s 0.8s;
       .artbox {
@@ -3129,7 +3106,7 @@ body.black {
             top:1vw;
             right:1vw;
             font-size:0.8vw;
-            display:none;
+            // display:none;
           }
           .back{
             transform:rotateY(180deg);
@@ -3145,13 +3122,13 @@ body.black {
       .artbox1,
       .artbox3,
       .artbox5 {
-        width: 20vw;
-        height: 24vw;
+        width: 24vw;
+        height: 29vw;
       }
       .artbox2,
       .artbox4 {
-        width: 20vw;
-        height: 20vw;
+        width: 24vw;
+        height: 24vw;
       }
       /* 작업물 위치 */
       .artbox1 {
@@ -3200,55 +3177,50 @@ body.black {
       display: none;
 
       /* 정사각형 작업물 스타일 */
-      &:nth-child(even){
-        .modal-content{
-          width:50%;
-          height:25vw;
-          >img{
-            height:25vw;
-          }
-        }
-      }
+      // &:nth-child(even){
+      //   .modal-content{
+      //     width:50%;
+      //     height:25vw;
+      //     >img{
+      //       height:25vw;
+      //     }
+      //   }
+      // }
       .modal-content {
-        width: 50%;
-        height:35vw;
+        width: 80%;
         margin: 0px auto;
         // padding: 100px;
-        // background: #fff;
         text-align: center;
         position: relative;
-        // background: #f4f4f4;
         background:#fff;
-        display:flex;
+        // display:flex;
         > img {
-          width: 25vw;
-          height:35vw;
-          // height:34vw;
+          width: 100%;
           object-fit:cover;
           display: block;
         }
         .modal-right{
           // width:25vw;
-          width:50%;
+          width:100%;
           display:flex;
           justify-content:center;
           align-items:center;
-          padding:5%;
+          padding:10%;
           p{
-            font-size:20px;
-            margin-bottom:40px;
+            font-size:16px;
+            margin-bottom:30px;
           }
           img{
-            width:3vw;
+            width:8vw;
           }
         }
         .close {
           position: absolute;
-          top: 2vw;
-          right: 2vw;
+          top: 6vw;
+          right: 6vw;
           cursor: pointer;
           img{
-            width:2vw;
+            width:5vw;
           }
         }
       }
@@ -3265,17 +3237,18 @@ body.black {
       justify-content: space-between;
       align-items: center;
       padding: 30px 5vw;
+      gap:20px;
       border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
       border-top: 1.5px solid rgba(255, 255, 255, 0.2);
 
       > h2 {
-        font-size: 9vw;
+        font-size: 8vw;
         font-weight: 300;
         text-transform: uppercase;
       }
       p {
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         color: #fff;
       }
     }
@@ -3297,7 +3270,7 @@ body.black {
           align-items: center;
           gap: 20px;
           img {
-            width: 30px;
+            width: 20px;
           }
           a {
             display: inline-block;
@@ -3309,7 +3282,7 @@ body.black {
             border-bottom: 2px solid rgba(255, 255, 255, 0.5);
           }
           span {
-            font-size: 16px;
+            font-size: 1.7vw;
             color: #fff;
           }
         }
@@ -3327,7 +3300,7 @@ body.black {
           overflow: hidden;
           span {
             text-transform: uppercase;
-            font-size: 9vw;
+            font-size: 8vw;
             font-weight: 300;
             font-family: "Marcellus", serif;
             display: inline-block;
@@ -3347,7 +3320,7 @@ body.black {
           align-items: end;
           padding: 0px 20px 20px 0px;
           span {
-            font-size: 16px;
+            font-size: 12px;
             display: inline-block;
             text-transform: uppercase;
             text-align: right;

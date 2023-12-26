@@ -286,20 +286,41 @@ $('.artbox').click(function(){
     }
     /* con4 artwork 요소 스크롤에 따라 
        움직임 */
-    if (scroll > con4) {
-      $(".artbox1").css({
-        left: 4 + scroll / 600 + "vw",
-      });
-      $(".artbox2").css({
-        right: 0 + scroll / 500 + "vw",
-      });
-      $(".artbox4").css({
-        left: 5 + scroll / 800 + "vw",
-      });
-      $(".artbox5").css({
-        right: 0 + scroll / 500 + "vw",
-      });
-    }
+
+    $(window).resize(function() {
+        if($(window).width() > 767) {
+          if (scroll > con4) {
+            $(".artbox1").css({
+              left: 4 + scroll / 600 + "vw",
+            });
+            $(".artbox2").css({
+              right: 0 + scroll / 500 + "vw",
+            });
+            $(".artbox4").css({
+              left: 5 + scroll / 800 + "vw",
+            });
+            $(".artbox5").css({
+              right: 0 + scroll / 500 + "vw",
+            });
+          }
+        } else {
+          if (scroll > con4) {
+            $(".artbox1").css({
+              left: 4 + scroll / 900 + "vw",
+            });
+            $(".artbox2").css({
+              right: 0 + scroll / 700 + "vw",
+            });
+            $(".artbox4").css({
+              left: 5 + scroll / 900 + "vw",
+            });
+            $(".artbox5").css({
+              right: 0 + scroll / 700 + "vw",
+            });
+          }
+        }
+      }).resize();
+    
 
     /* con5 스크롤에 따라 배경 검은색으로 바뀜 */
     if (scroll > con5 - 100) {
