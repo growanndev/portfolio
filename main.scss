@@ -32,31 +32,12 @@ a {
 // html,body{
 //   overflow-x: hidden;
 // }
-body {
-  cursor: none;
-  overflow-x: hidden;
+body{
+  overflow-x:hidden;
 }
 
-/* custom cursor */
-.cursor {
-  width: 30px;
-  height: 30px;
-  cursor: none;
-  // background: rgba(255, 255, 255, 0.05);
-  background: rgba(255, 255, 255, 0.8);
-  // backdrop-filter: blur(3px);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  // background:rgba(0,0,0,0.8);
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 900;
-  mix-blend-mode: difference;
-}
+
+
 
 /* 텍스트 아래에 있다가 올라오는 애니메이션*/
 
@@ -90,6 +71,30 @@ body.black {
 
 @media (min-width: 1221px) {
 
+
+  body {
+    cursor: none;
+  }
+  /* custom cursor */
+  .cursor {
+    width: 30px;
+    height: 30px;
+    cursor: none;
+    // background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.8);
+    // backdrop-filter: blur(3px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    // background:rgba(0,0,0,0.8);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 900;
+    mix-blend-mode: difference;
+  }
 
 
   /* 로드 페이지 */
@@ -2285,7 +2290,7 @@ body.black {
     text-align:center;
     color: #fff;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
     overflow: hidden;
     span {
       display: inline-block;
@@ -2706,7 +2711,6 @@ body.black {
           font-size:16px;
           text-align: center;
           span{
-            font-size:17px;
             display:inline-block;
             margin-top:5px;
           }
@@ -2757,7 +2761,7 @@ body.black {
         flex-direction:column;
         justify-content:start;
         align-items:start;
-        padding:20px 0px 20px 15vw;
+        padding:30px 5vw 30px 15vw;
         position: relative;
         transition: 1s;
         .skill-bg {
@@ -2771,8 +2775,8 @@ body.black {
         }
         img {
           display: inline-block;
-          // width: 7%;
-          width: 0%;
+         width:30px;
+          // width: 0%;
           overflow:hidden;
           transform: translateY(-3px);
           transition: 1s;
@@ -2782,15 +2786,15 @@ body.black {
           font-family: "Marcellus", serif;
           text-transform: uppercase;
           font-size: 20px;
-          // margin: 0px 7vw;
+          margin:20px 0px;
           color: #fff;
         }
         p {
-          display: none;
-          opacity: 0;
+          // display: none;
+          opacity: 1;
           font-size:15px;
-          transform: translateY(40px);
-          animation: go-up 1s forwards;
+          // transform: translateY(40px);
+          // animation: go-up 1s forwards;
         }
         /* 글자 올라오는 효과 */
         @keyframes go-up {
@@ -2801,24 +2805,24 @@ body.black {
         }
       }
       /* 요소에 마우스를 올려놓았을 때 효과*/
-      li.active {
-        // height: 130px;
-        padding:40px 7vw 40px 15vw;
-      }
-      li.active .skill-bg {
-        width: 100%;
-      }
-      li.active h4{
-        margin:20px 0px;
-        transform:translateX(5px);
-      }
-      li.active img {
-        width: 10%;
-        object-fit:cover;
-      }
-      li.active p {
-        display: block;
-      }
+      // li.active {
+      //   // height: 130px;
+      //   padding:40px 7vw 40px 15vw;
+      // }
+      // li.active .skill-bg {
+      //   width: 100%;
+      // }
+      // li.active h4{
+      //   margin:20px 0px;
+      //   transform:translateX(5px);
+      // }
+      // // li.active img {
+      // //   width: 10%;
+      // //   object-fit:cover;
+      // // }
+      // li.active p {
+      //   display: block;
+      // }
     }
     /* con2 스크롤 효과 */
     &.on > h2 span {
@@ -2924,6 +2928,7 @@ body.black {
           > div {
             width: 30%;
             max-width: 190px;
+            cursor:pointer;
             a {
               display: block;
               width: 100%;
@@ -3063,6 +3068,7 @@ body.black {
       transition: 0.8s 0.8s;
       .artbox {
         perspective: 600px;
+        cursor:pointer;
         .card-wrap {
           width: 100%;
           height: 100%;
@@ -3177,7 +3183,7 @@ body.black {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.8);
-      // padding: 150px 0px;
+      padding: 100px 0px;
       justify-content: center;
       align-items: center;
       position: fixed;
@@ -3187,17 +3193,17 @@ body.black {
       display: none;
 
       /* 정사각형 작업물 스타일 */
-      // &:nth-child(even){
-      //   .modal-content{
-      //     width:50%;
-      //     height:25vw;
-      //     >img{
-      //       height:25vw;
-      //     }
-      //   }
-      // }
+      &:nth-child(even){
+        .modal-content{
+          width:75%;
+          
+          >img{
+            height:65vw;
+          }
+        }
+      }
       .modal-content {
-        width: 80%;
+        width: 75%;
         margin: 0px auto;
         // padding: 100px;
         text-align: center;
@@ -3206,7 +3212,8 @@ body.black {
         // display:flex;
         > img {
           width: 100%;
-          object-fit:cover;
+          height: 82vw;
+          // object-fit:cover;
           display: block;
         }
         .modal-right{
@@ -3217,7 +3224,7 @@ body.black {
           align-items:center;
           padding:10%;
           p{
-            font-size:16px;
+            font-size:14px;
             margin-bottom:30px;
           }
           img{
@@ -3226,11 +3233,11 @@ body.black {
         }
         .close {
           position: absolute;
-          top: 6vw;
-          right: 6vw;
+          top: 3vw;
+          right: 3vw;
           cursor: pointer;
           img{
-            width:5vw;
+            width:4vw;
           }
         }
       }
@@ -3273,7 +3280,7 @@ body.black {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 50px;
+        gap: 40px;
         li {
           width: 55%;
           display: flex;

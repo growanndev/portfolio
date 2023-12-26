@@ -33,26 +33,7 @@ a {
 }
 
 body {
-  cursor: none;
   overflow-x: hidden;
-}
-
-/* custom cursor */
-.cursor {
-  width: 30px;
-  height: 30px;
-  cursor: none;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: 900;
-  mix-blend-mode: difference;
 }
 
 /* 텍스트 아래에 있다가 올라오는 애니메이션*/
@@ -81,6 +62,26 @@ body.black {
 /* pc */
 /* pc */
 @media (min-width: 1221px) {
+  body {
+    cursor: none;
+  }
+  /* custom cursor */
+  .cursor {
+    width: 30px;
+    height: 30px;
+    cursor: none;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 900;
+    mix-blend-mode: difference;
+  }
   /* 로드 페이지 */
   .load-page {
     width: 100%;
@@ -2112,7 +2113,7 @@ body.black {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
     overflow: hidden;
   }
   .load-page h2 span {
@@ -2515,7 +2516,6 @@ body.black {
     text-align: center;
   }
   .wrap .con1 .con1-timeline li p span {
-    font-size: 17px;
     display: inline-block;
     margin-top: 5px;
   }
@@ -2557,7 +2557,7 @@ body.black {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    padding: 20px 0px 20px 15vw;
+    padding: 30px 5vw 30px 15vw;
     position: relative;
     transition: 1s;
     /* 글자 올라오는 효과 */
@@ -2573,7 +2573,7 @@ body.black {
   }
   .wrap .con2 .skill-list li img {
     display: inline-block;
-    width: 0%;
+    width: 30px;
     overflow: hidden;
     transform: translateY(-3px);
     transition: 1s;
@@ -2582,38 +2582,18 @@ body.black {
     font-family: "Marcellus", serif;
     text-transform: uppercase;
     font-size: 20px;
+    margin: 20px 0px;
     color: #fff;
   }
   .wrap .con2 .skill-list li p {
-    display: none;
-    opacity: 0;
+    opacity: 1;
     font-size: 15px;
-    transform: translateY(40px);
-    animation: go-up 1s forwards;
   }
   @keyframes go-up {
     100% {
       transform: translate(10px, 0px);
       opacity: 1;
     }
-  }
-  .wrap .con2 .skill-list li.active {
-    padding: 40px 7vw 40px 15vw;
-  }
-  .wrap .con2 .skill-list li.active .skill-bg {
-    width: 100%;
-  }
-  .wrap .con2 .skill-list li.active h4 {
-    margin: 20px 0px;
-    transform: translateX(5px);
-  }
-  .wrap .con2 .skill-list li.active img {
-    width: 10%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .wrap .con2 .skill-list li.active p {
-    display: block;
   }
   .wrap .con2.on > h2 span {
     transform: translateY(0px);
@@ -2717,6 +2697,7 @@ body.black {
   .wrap .con3 .port-list li .btn-wrap > div {
     width: 30%;
     max-width: 190px;
+    cursor: pointer;
   }
   .wrap .con3 .port-list li .btn-wrap > div a {
     display: block;
@@ -2835,6 +2816,7 @@ body.black {
   }
   .wrap .con4 .artbox-wrap .artbox {
     perspective: 600px;
+    cursor: pointer;
   }
   .wrap .con4 .artbox-wrap .artbox .card-wrap {
     width: 100%;
@@ -2931,6 +2913,7 @@ body.black {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
+    padding: 100px 0px;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -2940,8 +2923,14 @@ body.black {
     display: none;
     /* 정사각형 작업물 스타일 */
   }
+  .wrap .con4 .modal-wrap:nth-child(even) .modal-content {
+    width: 75%;
+  }
+  .wrap .con4 .modal-wrap:nth-child(even) .modal-content > img {
+    height: 65vw;
+  }
   .wrap .con4 .modal-wrap .modal-content {
-    width: 80%;
+    width: 75%;
     margin: 0px auto;
     text-align: center;
     position: relative;
@@ -2949,8 +2938,7 @@ body.black {
   }
   .wrap .con4 .modal-wrap .modal-content > img {
     width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
+    height: 82vw;
     display: block;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right {
@@ -2961,7 +2949,7 @@ body.black {
     padding: 10%;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right p {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 30px;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right img {
@@ -2969,12 +2957,12 @@ body.black {
   }
   .wrap .con4 .modal-wrap .modal-content .close {
     position: absolute;
-    top: 6vw;
-    right: 6vw;
+    top: 3vw;
+    right: 3vw;
     cursor: pointer;
   }
   .wrap .con4 .modal-wrap .modal-content .close img {
-    width: 5vw;
+    width: 4vw;
   }
   .wrap .con5 {
     width: 100%;
@@ -3013,7 +3001,7 @@ body.black {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 40px;
   }
   .wrap .con5 .contact .contact-left li {
     width: 55%;
