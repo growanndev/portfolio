@@ -69,16 +69,31 @@ $(function () {
     $(".skill-list li").removeClass("active");
   });
 
-  /* con3 기획안 모달박스 */
+  /* con3 포트폴리오 기획안 모달박스 */
   $(".plan1").click(function () {
-    $(".modal1").css({ display: "block" });
+    $(".p-modal1").css({ display: "block" });
     $("body").css({ overflowY: "hidden" });
   });
 
+
+
+/* close 클릭하면 모든 모달 display:none; */
   $(".close").click(function () {
     $(".modal-wrap").css({ display: "none" });
     $("body").css({ overflowY: "auto" });
   });
+
+
+/* artbox 모달박스 */
+
+$('.artbox').click(function(){
+  let idx = $(this).index();
+//  console.log(idx);
+  $('.con4 .modal-wrap').eq(idx).css({
+    display:'flex'
+  })
+})
+
 
   /* 스크롤 제어 */
   /* 스크롤 제어 */
@@ -100,7 +115,7 @@ $(function () {
     let con5 = $(".con5").offset().top + baseline;
 
     // 스크롤하면 헤더 나옴
-    $(".header").stop().animate({ opacity: 1 }, 1000);
+    $(".header").stop().animate({ opacity: 1 }, 500);
 
     // 메뉴 페이지에서 메뉴 누르면 메뉴 페이지 들어가고
     // 해당 페이지로 스크롤 됨
@@ -261,20 +276,13 @@ $(function () {
     if (scroll > con4) {
       $(".con4").addClass("on");
       setTimeout(function () {
-        $(".con4").addClass("show");
+        $('.artbox').each(function(index,element){
+          setTimeout(function(){
+            $(element).find('.card-wrap').addClass('on');
+          },200*index);
+        })
       }, 1000);
 
-      /* 나올때 뒤집힘 방지 */
-      setTimeout(function () {
-        /* con4 작업물 소개 카드 뒤집히는 효과 */
-
-        $(".card-wrap").mouseenter(function () {
-          $(this).addClass("active");
-        });
-        $(".card-wrap").mouseleave(function () {
-          $(".card-wrap").removeClass("active");
-        });
-      }, 2000);
     }
     /* con4 artwork 요소 스크롤에 따라 
        움직임 */
