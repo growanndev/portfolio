@@ -2504,9 +2504,9 @@ body.black {
     transition: 0.5s;
   }
   .wrap .con1 .con1-timeline li .con1-circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 15px;
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
     background: #111;
     margin: 0px auto 20px;
   }
@@ -2574,6 +2574,7 @@ body.black {
   .wrap .con2 .skill-list li img {
     display: inline-block;
     width: 0%;
+    overflow: hidden;
     transform: translateY(-3px);
     transition: 1s;
   }
@@ -2607,7 +2608,7 @@ body.black {
     transform: translateX(5px);
   }
   .wrap .con2 .skill-list li.active img {
-    width: 15%;
+    width: 10%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2693,11 +2694,11 @@ body.black {
     }
   }
   .wrap .con3 .port-list li > h3 {
-    font-size: 26px;
+    font-size: 24px;
     margin: 35px 0px 25px;
   }
   .wrap .con3 .port-list li .tag {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
   }
   .wrap .con3 .port-list li .tag span {
@@ -2800,7 +2801,7 @@ body.black {
     /*  artbox 모달박스 공통 적용 */
   }
   .wrap .con4 .con4-main-text {
-    width: 70%;
+    width: 80%;
     text-align: right;
     margin: 0px auto 30px;
   }
@@ -2862,27 +2863,29 @@ body.black {
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front:hover .click {
     display: block;
   }
+  .wrap .con4 .artbox-wrap .artbox .card-wrap .front:hover img {
+    transform: scale(1.05);
+  }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front img {
     width: 100%;
     height: 100%;
     transition: 0.6s;
   }
-  .wrap .con4 .artbox-wrap .artbox .card-wrap .front img:hover {
-    transform: scale(1.05);
-  }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front .click {
-    width: 3vw;
-    height: 3vw;
+    width: 15vw;
+    height: 15vw;
     text-align: center;
-    border-radius: 3vw;
-    line-height: 3vw;
-    background: rgba(255, 255, 255, 0.5);
+    border-radius: 15vw;
+    line-height: 15vw;
+    background: rgba(255, 255, 255, 0.3);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     position: absolute;
-    top: 1vw;
-    right: 1vw;
-    font-size: 0.8vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3vw;
+    text-align: center;
   }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .back {
     transform: rotateY(180deg);
@@ -3010,16 +3013,18 @@ body.black {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
   }
   .wrap .con5 .contact .contact-left li {
     width: 55%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
   }
   .wrap .con5 .contact .contact-left li img {
     width: 20px;
+    display: block;
   }
   .wrap .con5 .contact .contact-left li a {
     display: inline-block;
@@ -3027,10 +3032,10 @@ body.black {
     border-bottom: 2px solid transparent;
   }
   .wrap .con5 .contact .contact-left li a:hover {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   }
   .wrap .con5 .contact .contact-left li span {
-    font-size: 1.7vw;
+    font-size: 3vw;
     color: #fff;
   }
   .wrap .con5 .contact .contact-right {
@@ -3068,7 +3073,7 @@ body.black {
     padding: 0px 20px 20px 0px;
   }
   .wrap .con5 .contact .contact-right p span {
-    font-size: 12px;
+    font-size: 8px;
     display: inline-block;
     text-transform: uppercase;
     text-align: right;
