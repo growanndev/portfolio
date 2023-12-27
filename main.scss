@@ -1200,7 +1200,7 @@ body.black {
   h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 30px;
     overflow: hidden;
     span {
       display: inline-block;
@@ -1225,7 +1225,7 @@ body.black {
     opacity: 0;
     h2 {
       // font-size: 1.5vw;
-      font-size:30px;
+      font-size:22px;
       a {
         color: #fff;
       }
@@ -1235,22 +1235,19 @@ body.black {
       justify-content: center;
       align-items: center;
       // gap: 1vw;
-      gap:15px;
+      gap:12px;
       cursor: pointer;
       p {
         color: #fff;
-        font-size: 30px;
+        font-size: 22px;
       }
       .hambar {
-        // width: 3.5vw;
-        // height: 1.7vw;
-        width:40px;
-        height:30px;
+        width:32px;
+        height:25px;
         position: relative;
         li {
-          // width: 60%;
           width:100%;
-          height: 3px;
+          height: 2px;
           background: #fff;
           position: absolute;
           left: 0px;
@@ -1303,12 +1300,12 @@ body.black {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      padding: 0px 20px 0px 50px;
+      padding: 0px 50px;
       position: absolute;
       top: 30px;
       left: 0px;
       h2 {
-        font-size: 1.5vw;
+        font-size: 22px;
         a {
           color: #fff;
         }
@@ -1317,19 +1314,19 @@ body.black {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1vw;
+        gap: 12px;
         cursor: pointer;
         p {
           color: #fff;
-          font-size: 1.5vw;
+          font-size: 22px;
         }
         .hambar {
-          width: 3.5vw;
-          height: 1.7vw;
+          width: 32px;
+          height: 25px;
           position: relative;
           li {
-            width: 60%;
-            height: 3px;
+            width: 100%;
+            height: 2px;
             background: #fff;
             position: absolute;
             left: 0px;
@@ -1354,14 +1351,15 @@ body.black {
       a {
         font-family: "Marcellus", serif;
         color: #fff;
-        font-size: 4vw;
+        // font-size: 4vw;
+        font-size:50px;
         font-weight: 300;
       }
       .underline {
         width: 0px;
-        height: 4px;
+        height: 2px;
         transition: 0.5s;
-        background: rgba(255, 255, 255, 0.2);
+        background: rgba(255, 255, 255, 0.6);
       }
       &:hover .underline {
         width: 100%;
@@ -1388,7 +1386,7 @@ body.black {
       > h1 {
         text-transform: uppercase;
         font-weight: 500;
-        font-size: 10em;
+        font-size: 90px;
         color: #fff;
         text-align: center;
         margin-top: -20px;
@@ -1408,9 +1406,9 @@ body.black {
         &:after {
           content: "";
           display: inline-block;
-          width: 20px;
-          height: 20px;
-          border-radius: 20px;
+          width: 15px;
+          height: 15px;
+          border-radius: 15px;
           background: #ded685;
         }
         &.on {
@@ -1421,8 +1419,8 @@ body.black {
     }
 
     .visual-bar-wrap {
-      width: 30%;
-      height: 40vh;
+      width: 40%;
+      height: 35vw;
       margin: 0px auto;
       display: flex;
       flex-direction: column;
@@ -1458,14 +1456,14 @@ body.black {
       }
 
       .bar1.on {
-        width: 340px;
-        height: 80px;
+        width: 250px;
+        height: 60px;
         border-radius: 100px;
         background: #f7f6ee;
       }
       .bar2.on {
-        width: 340px;
-        height: 80px;
+        width: 250px;
+        height: 60px;
         border-radius: 100px;
         // background: #cac9c3;
         transform: rotate(-10deg);
@@ -1483,21 +1481,21 @@ body.black {
         }
       }
       .bar3.on {
-        width: 340px;
-        height: 80px;
+        width: 250px;
+        height: 60px;
         border-radius: 100px;
         background: #ccc;
       }
       .bar4.on {
-        width: 340px;
-        height: 80px;
+        width: 250px;
+        height: 60px;
         border-radius: 100px;
         background: #f7f6ee;
       }
     }
     > h3 {
       text-align: center;
-      font-size: 2em;
+      font-size: 24px;
       font-weight: 200;
       color: #fff;
       opacity: 0;
@@ -1513,8 +1511,8 @@ body.black {
       }
     }
     .circle-arrow {
-      width: 270px;
-      height: 270px;
+      width: 240px;
+      height: 240px;
       margin: 0px auto 0px;
       position: relative;
       opacity: 0;
@@ -1552,14 +1550,14 @@ body.black {
     padding-top:180px;
     .con1-main-text {
       margin-bottom: 40px;
-      padding-left: 20vw;
+      padding-left: 12vw;
       h2 {
         overflow: hidden;
         span {
           font-family: "Marcellus", serif;
           text-transform: uppercase;
           // font-size: 4.9em;
-          font-size:125px;
+          font-size:90px;
           font-weight: 300;
           display: inline-block;
           transform: translateY(100%);
@@ -1569,28 +1567,28 @@ body.black {
           }
         }
         &:nth-of-type(2) {
-          margin-top: -35px;
+          margin-top: -15px;
         }
       }
     }
     .con1-content {
       width: 90%;
-      padding-left: 20vw;
+      padding-left: 12vw;
       display: flex;
       align-items: center;
       justify-content: start;
       gap: 5%;
       img {
-        width: 70%;
+        width: 65%;
         max-width: 600px;
       }
       .con1-text {
         p {
-          font-size: 1.2em;
+          font-size: 18px;
           margin-bottom: 30px;
         }
         h4 {
-          font-size: 1.4em;
+          font-size: 20px;
           font-weight: 600;
           span {
             margin-right: 20px;
@@ -1612,26 +1610,29 @@ body.black {
         opacity: 0;
         transition: 0.5s;
         .con1-circle {
-          width: 20px;
-          height: 20px;
-          border-radius: 20px;
+          width: 15px;
+          height: 15px;
+          border-radius: 15px;
           background: #111;
           margin: 0px auto 20px;
         }
         p {
           // font-size: 1.4em;
-          font-size:22px;
+          font-size:20px;
           text-align: center;
           span{
-            font-size:24px;
+            font-size:20px;
             display:inline-block;
             margin-top:5px;
+          }
+          .mobile-none{
+            display:none;
           }
         }
       }
       li.on {
         opacity: 1;
-        transform: translateY(-10px);
+        transform: translateY(-5px);
       }
     }
     .more {
@@ -1673,7 +1674,7 @@ body.black {
         display: inline-block;
         transform: translateY(100%);
         text-transform: uppercase;
-        font-size: 5em;
+        font-size: 85px;
         font-weight: 300;
         transition: 1.3s;
       }
@@ -1714,14 +1715,14 @@ body.black {
         h4 {
           font-family: "Marcellus", serif;
           text-transform: uppercase;
-          font-size: 1.8em;
+          font-size: 24px;
           margin: 0px 7vw;
           color: #fff;
         }
         p {
           display: none;
           opacity: 0;
-          font-size: 1.2em;
+          font-size: 16px;
           transform: translateY(40px);
           animation: go-up 1s forwards;
         }
@@ -1736,7 +1737,7 @@ body.black {
       /* 요소에 마우스를 올려놓았을 때 효과*/
       li.active {
         height: 130px;
-        padding: 10px 0px 10px 15vw;
+        padding: 10px 5vw 10px 15vw;
       }
       li.active .skill-bg {
         width: 100%;
@@ -1772,7 +1773,7 @@ body.black {
       > h2 {
         text-transform: uppercase;
         margin-bottom: 10px;
-        font-size: 7em;
+        font-size: 8vw;
         font-weight: 300;
       }
     }
@@ -1782,7 +1783,7 @@ body.black {
       align-items: center;
       gap: 150px;
       li {
-        width: 35%;
+        width: 50%;
         text-align: center;
         padding-bottom: 20px;
         background: rgba(255, 255, 255, 0.8);
@@ -1791,7 +1792,7 @@ body.black {
         transition: 1.5s;
         .web-img {
           width: 100%;
-          height: 22vw;
+          height: 30vw;
           overflow: hidden;
           position: relative;
           box-shadow: 2px 2px 5px 2px #ccc;
@@ -1830,11 +1831,11 @@ body.black {
           }
         }
         > h3 {
-          font-size: 2.3em;
+          font-size: 25px;
           margin: 35px 0px 25px;
         }
         .tag {
-          font-size: 1.3em;
+          font-size: 18px;
           font-weight: 900;
           span {
             margin: 0px 15px;
@@ -1842,7 +1843,7 @@ body.black {
         }
         .description {
           width: 60%;
-          font-size: 1.2em;
+          font-size: 18px;
           margin: 15px auto 40px;
         }
         .btn-wrap {
@@ -1857,7 +1858,7 @@ body.black {
               width: 100%;
               padding: 7px 0px;
               border-radius: 40px;
-              font-size: 1.5em;
+              font-size: 18px;
               border: 1px solid #000;
               background: #fff;
               transition: 0.8s;
@@ -1873,10 +1874,11 @@ body.black {
           .plan {
             padding: 7px 0px;
             border-radius: 40px;
-            font-size: 1.5em;
+            font-size: 18px;
             border: 1px solid #000;
             background: #fff;
             transition: 0.8s;
+            cursor:pointer;
             &:hover {
               // background: #e8e08b;
               // border: 1px solid #ded685;
@@ -1886,24 +1888,24 @@ body.black {
           }
         }
         &:nth-child(odd) {
-          transform: translateX(30%);
+          transform: translateX(15%);
         }
         &:nth-child(even) {
-          transform: translateX(-30%);
+          transform: translateX(-15%);
         }
       }
 
       /* port-list 스크롤에 따라 on 붙을 때 */
       .port1.on {
-        transform: translate(45%, 0px);
+        transform: translate(30%, 0px);
         opacity: 1;
       }
       .port2.on {
-        transform: translate(-45%, 0px);
+        transform: translate(-30%, 0px);
         opacity: 1;
       }
       .port3.on {
-        transform: translate(45%, 0px);
+        transform: translate(30%, 0px);
         opacity: 1;
       }
 
@@ -1925,7 +1927,7 @@ body.black {
       display: none;
       overflow: auto;
       .modal-content {
-        width: 70%;
+        width: 75%;
         margin: 0px auto;
         // padding: 100px;
         // background: #fff;
@@ -1964,7 +1966,7 @@ body.black {
       margin: 0px auto;
       > h2 {
         text-transform: uppercase;
-        font-size: 6em;
+        font-size: 70px;
         font-weight: 400;
         overflow: hidden;
 
@@ -1973,7 +1975,7 @@ body.black {
         }
       }
       > p {
-        font-size: 1.8em;
+        font-size: 20px;
         overflow: hidden;
         span {
           transition: 0.8s 0.5s;
@@ -1985,7 +1987,7 @@ body.black {
       }
     }
     .artbox-wrap {
-      height: 60vw;
+      height: 76vw;
       position: relative;
       transition: 0.8s 0.8s;
       .artbox {
@@ -2047,19 +2049,20 @@ body.black {
 
       .artbox {
         position: absolute;
+        cursor:pointer;
       }
 
       /* 각 작업물 크기대로 설정해주면 됨 !!!! */
       .artbox1,
       .artbox3,
       .artbox5 {
-        width: 20vw;
-        height: 24vw;
+        width: 22vw;
+        height: 28vw;
       }
       .artbox2,
       .artbox4 {
-        width: 20vw;
-        height: 20vw;
+        width: 22vw;
+        height: 22vw;
       }
       /* 작업물 위치 */
       .artbox1 {
@@ -2073,7 +2076,7 @@ body.black {
       }
       .artbox3 {
         left: 40vw;
-        top: 20vw;
+        top: 30vw;
       }
       .artbox4 {
         left: 5vw;
@@ -2110,16 +2113,17 @@ body.black {
       /* 정사각형 작업물 스타일 */
       &:nth-child(even){
         .modal-content{
-          width:50%;
-          height:25vw;
+          width:70%;
+          height:35vw;
           >img{
-            height:25vw;
+            height:35vw;
+            object-fit: cover;
           }
         }
       }
       .modal-content {
-        width: 50%;
-        height:35vw;
+        width: 70%;
+        height:50vw;
         margin: 0px auto;
         // padding: 100px;
         // background: #fff;
@@ -2129,8 +2133,8 @@ body.black {
         background:#fff;
         display:flex;
         > img {
-          width: 25vw;
-          height:35vw;
+          width:50%;
+          height:50vw;
           // height:34vw;
           object-fit:cover;
           display: block;
@@ -2143,7 +2147,7 @@ body.black {
           align-items:center;
           padding:5%;
           p{
-            font-size:20px;
+            font-size:15px;
             margin-bottom:40px;
           }
           img{
@@ -2177,13 +2181,13 @@ body.black {
       border-top: 1.5px solid rgba(255, 255, 255, 0.2);
 
       > h2 {
-        font-size: 9vw;
+        font-size: 8vw;
         font-weight: 300;
         text-transform: uppercase;
       }
       p {
         text-align: center;
-        font-size: 1.4em;
+        font-size: 16px;
         color: #fff;
       }
     }
@@ -2205,7 +2209,7 @@ body.black {
           align-items: center;
           gap: 30px;
           img {
-            width: 50px;
+            width: 30px;
           }
           a {
             display: inline-block;
@@ -2217,7 +2221,7 @@ body.black {
             border-bottom: 2px solid rgba(255, 255, 255, 0.5);
           }
           span {
-            font-size: 1.8em;
+            font-size: 18px;
             color: #fff;
           }
         }
@@ -2235,7 +2239,7 @@ body.black {
           overflow: hidden;
           span {
             text-transform: uppercase;
-            font-size: 9vw;
+            font-size: 8vw;
             font-weight: 300;
             font-family: "Marcellus", serif;
             display: inline-block;
@@ -2255,7 +2259,7 @@ body.black {
           align-items: end;
           padding: 0px 20px 20px 0px;
           span {
-            font-size: 1.3em;
+            font-size: 12px;
             display: inline-block;
             text-transform: uppercase;
             text-align: right;
@@ -2314,7 +2318,7 @@ body.black {
     z-index: 99;
     opacity: 0;
     h2 {
-      font-size:20px;
+      font-size:16px;
       a {
         color: #fff;
       }
@@ -2327,13 +2331,11 @@ body.black {
       cursor: pointer;
       p {
         color: #fff;
-        font-size: 20px;
+        font-size: 16px;
       }
       .hambar {
-        // width: 3.5vw;
-        // height: 1.7vw;
-        width:30px;
-        height:20px;
+        width:25px;
+        height:18px;
         position: relative;
         li {
           // width: 60%;
@@ -2396,7 +2398,7 @@ body.black {
       top: 30px;
       left: 0px;
       h2 {
-        font-size: 20px;
+        font-size: 16px;
         a {
           color: #fff;
         }
@@ -2409,11 +2411,11 @@ body.black {
         cursor: pointer;
         p {
           color: #fff;
-          font-size: 20px;
+          font-size: 16px;
         }
         .hambar {
-          width: 30px;
-          height: 20px;
+          width: 25px;
+          height: 18px;
           position: relative;
           li {
             width: 100%;
@@ -2804,25 +2806,7 @@ body.black {
           }
         }
       }
-      /* 요소에 마우스를 올려놓았을 때 효과*/
-      // li.active {
-      //   // height: 130px;
-      //   padding:40px 7vw 40px 15vw;
-      // }
-      // li.active .skill-bg {
-      //   width: 100%;
-      // }
-      // li.active h4{
-      //   margin:20px 0px;
-      //   transform:translateX(5px);
-      // }
-      // // li.active img {
-      // //   width: 10%;
-      // //   object-fit:cover;
-      // // }
-      // li.active p {
-      //   display: block;
-      // }
+      
     }
     /* con2 스크롤 효과 */
     &.on > h2 span {
@@ -3063,7 +3047,7 @@ body.black {
       }
     }
     .artbox-wrap {
-      height: 80vw;
+      height: 150vw;
       position: relative;
       transition: 0.8s 0.8s;
       .artbox {
@@ -3138,13 +3122,13 @@ body.black {
       .artbox1,
       .artbox3,
       .artbox5 {
-        width: 24vw;
-        height: 29vw;
+        width: 40vw;
+        height: 50vw;
       }
       .artbox2,
       .artbox4 {
-        width: 24vw;
-        height: 24vw;
+        width: 40vw;
+        height: 40vw;
       }
       /* 작업물 위치 */
       .artbox1 {
@@ -3157,8 +3141,8 @@ body.black {
         right: 0vw;
       }
       .artbox3 {
-        left: 40vw;
-        top: 20vw;
+        left: 30vw;
+        top: 50vw;
       }
       .artbox4 {
         left: 5vw;

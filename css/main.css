@@ -1105,7 +1105,7 @@ body.black {
   .load-page h2 {
     color: #fff;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 30px;
     overflow: hidden;
   }
   .load-page h2 span {
@@ -1141,7 +1141,7 @@ body.black {
     /* header 스크롤에 따라 색상 바뀜 */
   }
   .wrap > .header h2 {
-    font-size: 30px;
+    font-size: 22px;
   }
   .wrap > .header h2 a {
     color: #fff;
@@ -1150,21 +1150,21 @@ body.black {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     cursor: pointer;
   }
   .wrap > .header .ham-menu p {
     color: #fff;
-    font-size: 30px;
+    font-size: 22px;
   }
   .wrap > .header .ham-menu .hambar {
-    width: 40px;
-    height: 30px;
+    width: 32px;
+    height: 25px;
     position: relative;
   }
   .wrap > .header .ham-menu .hambar li {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background: #fff;
     position: absolute;
     left: 0px;
@@ -1210,13 +1210,13 @@ body.black {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0px 20px 0px 50px;
+    padding: 0px 50px;
     position: absolute;
     top: 30px;
     left: 0px;
   }
   .wrap .menu-page .header h2 {
-    font-size: 1.5vw;
+    font-size: 22px;
   }
   .wrap .menu-page .header h2 a {
     color: #fff;
@@ -1225,21 +1225,21 @@ body.black {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vw;
+    gap: 12px;
     cursor: pointer;
   }
   .wrap .menu-page .header .ham-menu p {
     color: #fff;
-    font-size: 1.5vw;
+    font-size: 22px;
   }
   .wrap .menu-page .header .ham-menu .hambar {
-    width: 3.5vw;
-    height: 1.7vw;
+    width: 32px;
+    height: 25px;
     position: relative;
   }
   .wrap .menu-page .header .ham-menu .hambar li {
-    width: 60%;
-    height: 3px;
+    width: 100%;
+    height: 2px;
     background: #fff;
     position: absolute;
     left: 0px;
@@ -1262,14 +1262,14 @@ body.black {
   .wrap .menu-page > h2 a {
     font-family: "Marcellus", serif;
     color: #fff;
-    font-size: 4vw;
+    font-size: 50px;
     font-weight: 300;
   }
   .wrap .menu-page > h2 .underline {
     width: 0px;
-    height: 4px;
+    height: 2px;
     transition: 0.5s;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.6);
   }
   .wrap .menu-page > h2:hover .underline {
     width: 100%;
@@ -1290,7 +1290,7 @@ body.black {
   .wrap .visual .visual-main-text > h1 {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 10em;
+    font-size: 90px;
     color: #fff;
     text-align: center;
     margin-top: -20px;
@@ -1311,9 +1311,9 @@ body.black {
   .wrap .visual .visual-main-text .left:after {
     content: "";
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
     background: #ded685;
   }
   .wrap .visual .visual-main-text .left.on {
@@ -1321,8 +1321,8 @@ body.black {
     transform: translateX(0px);
   }
   .wrap .visual .visual-bar-wrap {
-    width: 30%;
-    height: 40vh;
+    width: 40%;
+    height: 35vw;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -1356,14 +1356,14 @@ body.black {
     left: -5vw;
   }
   .wrap .visual .visual-bar-wrap .bar1.on {
-    width: 340px;
-    height: 80px;
+    width: 250px;
+    height: 60px;
     border-radius: 100px;
     background: #f7f6ee;
   }
   .wrap .visual .visual-bar-wrap .bar2.on {
-    width: 340px;
-    height: 80px;
+    width: 250px;
+    height: 60px;
     border-radius: 100px;
     transform: rotate(-10deg);
     z-index: 10;
@@ -1378,20 +1378,20 @@ body.black {
     }
   }
   .wrap .visual .visual-bar-wrap .bar3.on {
-    width: 340px;
-    height: 80px;
+    width: 250px;
+    height: 60px;
     border-radius: 100px;
     background: #ccc;
   }
   .wrap .visual .visual-bar-wrap .bar4.on {
-    width: 340px;
-    height: 80px;
+    width: 250px;
+    height: 60px;
     border-radius: 100px;
     background: #f7f6ee;
   }
   .wrap .visual > h3 {
     text-align: center;
-    font-size: 2em;
+    font-size: 24px;
     font-weight: 200;
     color: #fff;
     opacity: 0;
@@ -1407,8 +1407,8 @@ body.black {
     transform: translateY(0px);
   }
   .wrap .visual .circle-arrow {
-    width: 270px;
-    height: 270px;
+    width: 240px;
+    height: 240px;
     margin: 0px auto 0px;
     position: relative;
     opacity: 0;
@@ -1440,7 +1440,7 @@ body.black {
   }
   .wrap .con1 .con1-main-text {
     margin-bottom: 40px;
-    padding-left: 20vw;
+    padding-left: 12vw;
   }
   .wrap .con1 .con1-main-text h2 {
     overflow: hidden;
@@ -1448,7 +1448,7 @@ body.black {
   .wrap .con1 .con1-main-text h2 span {
     font-family: "Marcellus", serif;
     text-transform: uppercase;
-    font-size: 125px;
+    font-size: 90px;
     font-weight: 300;
     display: inline-block;
     transform: translateY(100%);
@@ -1458,26 +1458,26 @@ body.black {
     transform: translateY(0px);
   }
   .wrap .con1 .con1-main-text h2:nth-of-type(2) {
-    margin-top: -35px;
+    margin-top: -15px;
   }
   .wrap .con1 .con1-content {
     width: 90%;
-    padding-left: 20vw;
+    padding-left: 12vw;
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 5%;
   }
   .wrap .con1 .con1-content img {
-    width: 70%;
+    width: 65%;
     max-width: 600px;
   }
   .wrap .con1 .con1-content .con1-text p {
-    font-size: 1.2em;
+    font-size: 18px;
     margin-bottom: 30px;
   }
   .wrap .con1 .con1-content .con1-text h4 {
-    font-size: 1.4em;
+    font-size: 20px;
     font-weight: 600;
   }
   .wrap .con1 .con1-content .con1-text h4 span {
@@ -1498,24 +1498,27 @@ body.black {
     transition: 0.5s;
   }
   .wrap .con1 .con1-timeline li .con1-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
     background: #111;
     margin: 0px auto 20px;
   }
   .wrap .con1 .con1-timeline li p {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
   }
   .wrap .con1 .con1-timeline li p span {
-    font-size: 24px;
+    font-size: 20px;
     display: inline-block;
     margin-top: 5px;
   }
+  .wrap .con1 .con1-timeline li p .mobile-none {
+    display: none;
+  }
   .wrap .con1 .con1-timeline li.on {
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(-5px);
   }
   .wrap .con1 .more {
     width: 240px;
@@ -1552,7 +1555,7 @@ body.black {
     display: inline-block;
     transform: translateY(100%);
     text-transform: uppercase;
-    font-size: 5em;
+    font-size: 85px;
     font-weight: 300;
     transition: 1.3s;
   }
@@ -1593,14 +1596,14 @@ body.black {
   .wrap .con2 .skill-list li h4 {
     font-family: "Marcellus", serif;
     text-transform: uppercase;
-    font-size: 1.8em;
+    font-size: 24px;
     margin: 0px 7vw;
     color: #fff;
   }
   .wrap .con2 .skill-list li p {
     display: none;
     opacity: 0;
-    font-size: 1.2em;
+    font-size: 16px;
     transform: translateY(40px);
     animation: go-up 1s forwards;
   }
@@ -1612,7 +1615,7 @@ body.black {
   }
   .wrap .con2 .skill-list li.active {
     height: 130px;
-    padding: 10px 0px 10px 15vw;
+    padding: 10px 5vw 10px 15vw;
   }
   .wrap .con2 .skill-list li.active .skill-bg {
     width: 100%;
@@ -1644,7 +1647,7 @@ body.black {
   .wrap .con3 .con3-main-text > h2 {
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: 7em;
+    font-size: 8vw;
     font-weight: 300;
   }
   .wrap .con3 .port-list {
@@ -1655,7 +1658,7 @@ body.black {
     /* port-list 스크롤에 따라 on 붙을 때 */
   }
   .wrap .con3 .port-list li {
-    width: 35%;
+    width: 50%;
     text-align: center;
     padding-bottom: 20px;
     background: rgba(255, 255, 255, 0.8);
@@ -1667,7 +1670,7 @@ body.black {
   }
   .wrap .con3 .port-list li .web-img {
     width: 100%;
-    height: 22vw;
+    height: 30vw;
     overflow: hidden;
     position: relative;
     box-shadow: 2px 2px 5px 2px #ccc;
@@ -1702,11 +1705,11 @@ body.black {
     }
   }
   .wrap .con3 .port-list li > h3 {
-    font-size: 2.3em;
+    font-size: 25px;
     margin: 35px 0px 25px;
   }
   .wrap .con3 .port-list li .tag {
-    font-size: 1.3em;
+    font-size: 18px;
     font-weight: 900;
   }
   .wrap .con3 .port-list li .tag span {
@@ -1714,7 +1717,7 @@ body.black {
   }
   .wrap .con3 .port-list li .description {
     width: 60%;
-    font-size: 1.2em;
+    font-size: 18px;
     margin: 15px auto 40px;
   }
   .wrap .con3 .port-list li .btn-wrap {
@@ -1731,7 +1734,7 @@ body.black {
     width: 100%;
     padding: 7px 0px;
     border-radius: 40px;
-    font-size: 1.5em;
+    font-size: 18px;
     border: 1px solid #000;
     background: #fff;
     transition: 0.8s;
@@ -1743,31 +1746,32 @@ body.black {
   .wrap .con3 .port-list li .btn-wrap .plan {
     padding: 7px 0px;
     border-radius: 40px;
-    font-size: 1.5em;
+    font-size: 18px;
     border: 1px solid #000;
     background: #fff;
     transition: 0.8s;
+    cursor: pointer;
   }
   .wrap .con3 .port-list li .btn-wrap .plan:hover {
     background: #111;
     color: #fff;
   }
   .wrap .con3 .port-list li:nth-child(odd) {
-    transform: translateX(30%);
+    transform: translateX(15%);
   }
   .wrap .con3 .port-list li:nth-child(even) {
-    transform: translateX(-30%);
+    transform: translateX(-15%);
   }
   .wrap .con3 .port-list .port1.on {
-    transform: translate(45%, 0px);
+    transform: translate(30%, 0px);
     opacity: 1;
   }
   .wrap .con3 .port-list .port2.on {
-    transform: translate(-45%, 0px);
+    transform: translate(-30%, 0px);
     opacity: 1;
   }
   .wrap .con3 .port-list .port3.on {
-    transform: translate(45%, 0px);
+    transform: translate(30%, 0px);
     opacity: 1;
   }
   .wrap .con3 .modal-wrap {
@@ -1783,7 +1787,7 @@ body.black {
     overflow: auto;
   }
   .wrap .con3 .modal-wrap .modal-content {
-    width: 70%;
+    width: 75%;
     margin: 0px auto;
     border-radius: 50px;
     text-align: center;
@@ -1815,7 +1819,7 @@ body.black {
   }
   .wrap .con4 .con4-main-text > h2 {
     text-transform: uppercase;
-    font-size: 6em;
+    font-size: 70px;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1823,7 +1827,7 @@ body.black {
     transition: 0.8s;
   }
   .wrap .con4 .con4-main-text > p {
-    font-size: 1.8em;
+    font-size: 20px;
     overflow: hidden;
   }
   .wrap .con4 .con4-main-text > p span {
@@ -1834,7 +1838,7 @@ body.black {
     transform: translateY(100%);
   }
   .wrap .con4 .artbox-wrap {
-    height: 60vw;
+    height: 76vw;
     position: relative;
     transition: 0.8s 0.8s;
     /* 각 작업물 크기대로 설정해주면 됨 !!!! */
@@ -1898,17 +1902,18 @@ body.black {
   }
   .wrap .con4 .artbox-wrap .artbox {
     position: absolute;
+    cursor: pointer;
   }
   .wrap .con4 .artbox-wrap .artbox1,
   .wrap .con4 .artbox-wrap .artbox3,
   .wrap .con4 .artbox-wrap .artbox5 {
-    width: 20vw;
-    height: 24vw;
+    width: 22vw;
+    height: 28vw;
   }
   .wrap .con4 .artbox-wrap .artbox2,
   .wrap .con4 .artbox-wrap .artbox4 {
-    width: 20vw;
-    height: 20vw;
+    width: 22vw;
+    height: 22vw;
   }
   .wrap .con4 .artbox-wrap .artbox1 {
     top: 5vw;
@@ -1920,7 +1925,7 @@ body.black {
   }
   .wrap .con4 .artbox-wrap .artbox3 {
     left: 40vw;
-    top: 20vw;
+    top: 30vw;
   }
   .wrap .con4 .artbox-wrap .artbox4 {
     left: 5vw;
@@ -1947,15 +1952,17 @@ body.black {
     /* 정사각형 작업물 스타일 */
   }
   .wrap .con4 .modal-wrap:nth-child(even) .modal-content {
-    width: 50%;
-    height: 25vw;
+    width: 70%;
+    height: 35vw;
   }
   .wrap .con4 .modal-wrap:nth-child(even) .modal-content > img {
-    height: 25vw;
+    height: 35vw;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .wrap .con4 .modal-wrap .modal-content {
-    width: 50%;
-    height: 35vw;
+    width: 70%;
+    height: 50vw;
     margin: 0px auto;
     text-align: center;
     position: relative;
@@ -1963,8 +1970,8 @@ body.black {
     display: flex;
   }
   .wrap .con4 .modal-wrap .modal-content > img {
-    width: 25vw;
-    height: 35vw;
+    width: 50%;
+    height: 50vw;
     -o-object-fit: cover;
        object-fit: cover;
     display: block;
@@ -1977,7 +1984,7 @@ body.black {
     padding: 5%;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right p {
-    font-size: 20px;
+    font-size: 15px;
     margin-bottom: 40px;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right img {
@@ -2007,13 +2014,13 @@ body.black {
     border-top: 1.5px solid rgba(255, 255, 255, 0.2);
   }
   .wrap .con5 .vision > h2 {
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 300;
     text-transform: uppercase;
   }
   .wrap .con5 .vision p {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 16px;
     color: #fff;
   }
   .wrap .con5 .contact {
@@ -2037,7 +2044,7 @@ body.black {
     gap: 30px;
   }
   .wrap .con5 .contact .contact-left li img {
-    width: 50px;
+    width: 30px;
   }
   .wrap .con5 .contact .contact-left li a {
     display: inline-block;
@@ -2048,7 +2055,7 @@ body.black {
     border-bottom: 2px solid rgba(255, 255, 255, 0.5);
   }
   .wrap .con5 .contact .contact-left li span {
-    font-size: 1.8em;
+    font-size: 18px;
     color: #fff;
   }
   .wrap .con5 .contact .contact-right {
@@ -2066,7 +2073,7 @@ body.black {
   }
   .wrap .con5 .contact .contact-right h2 span {
     text-transform: uppercase;
-    font-size: 9vw;
+    font-size: 8vw;
     font-weight: 300;
     font-family: "Marcellus", serif;
     display: inline-block;
@@ -2086,7 +2093,7 @@ body.black {
     padding: 0px 20px 20px 0px;
   }
   .wrap .con5 .contact .contact-right p span {
-    font-size: 1.3em;
+    font-size: 12px;
     display: inline-block;
     text-transform: uppercase;
     text-align: right;
@@ -2149,7 +2156,7 @@ body.black {
     /* header 스크롤에 따라 색상 바뀜 */
   }
   .wrap > .header h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .wrap > .header h2 a {
     color: #fff;
@@ -2163,11 +2170,11 @@ body.black {
   }
   .wrap > .header .ham-menu p {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
   }
   .wrap > .header .ham-menu .hambar {
-    width: 30px;
-    height: 20px;
+    width: 25px;
+    height: 18px;
     position: relative;
   }
   .wrap > .header .ham-menu .hambar li {
@@ -2224,7 +2231,7 @@ body.black {
     left: 0px;
   }
   .wrap .menu-page .header h2 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .wrap .menu-page .header h2 a {
     color: #fff;
@@ -2238,11 +2245,11 @@ body.black {
   }
   .wrap .menu-page .header .ham-menu p {
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
   }
   .wrap .menu-page .header .ham-menu .hambar {
-    width: 30px;
-    height: 20px;
+    width: 25px;
+    height: 18px;
     position: relative;
   }
   .wrap .menu-page .header .ham-menu .hambar li {
@@ -2548,7 +2555,6 @@ body.black {
   }
   .wrap .con2 .skill-list {
     border-top: 2px solid rgba(255, 255, 255, 0.2);
-    /* 요소에 마우스를 올려놓았을 때 효과*/
   }
   .wrap .con2 .skill-list li {
     color: #fff;
@@ -2808,7 +2814,7 @@ body.black {
     transform: translateY(100%);
   }
   .wrap .con4 .artbox-wrap {
-    height: 80vw;
+    height: 150vw;
     position: relative;
     transition: 0.8s 0.8s;
     /* 각 작업물 크기대로 설정해주면 됨 !!!! */
@@ -2878,13 +2884,13 @@ body.black {
   .wrap .con4 .artbox-wrap .artbox1,
   .wrap .con4 .artbox-wrap .artbox3,
   .wrap .con4 .artbox-wrap .artbox5 {
-    width: 24vw;
-    height: 29vw;
+    width: 40vw;
+    height: 50vw;
   }
   .wrap .con4 .artbox-wrap .artbox2,
   .wrap .con4 .artbox-wrap .artbox4 {
-    width: 24vw;
-    height: 24vw;
+    width: 40vw;
+    height: 40vw;
   }
   .wrap .con4 .artbox-wrap .artbox1 {
     top: 5vw;
@@ -2895,8 +2901,8 @@ body.black {
     right: 0vw;
   }
   .wrap .con4 .artbox-wrap .artbox3 {
-    left: 40vw;
-    top: 20vw;
+    left: 30vw;
+    top: 50vw;
   }
   .wrap .con4 .artbox-wrap .artbox4 {
     left: 5vw;
