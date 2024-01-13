@@ -51,7 +51,7 @@ body.black {
   background: #000 !important;
 }
 
-/* 요소 올라오면서 나타나는 class */
+/* 요소 올라오면서 나타나는 효과 */
 /* 요소에 opacity:0; transition, translateY() 적용*/
 .up {
   opacity: 1 !important;
@@ -283,7 +283,7 @@ body.black {
   .wrap .visual .visual-main-text > h1 {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 10em;
+    font-size: 8vw;
     color: #fff;
     text-align: center;
     margin-top: -20px;
@@ -384,7 +384,7 @@ body.black {
   }
   .wrap .visual > h3 {
     text-align: center;
-    font-size: 2em;
+    font-size: 26px;
     font-weight: 200;
     color: #fff;
     opacity: 0;
@@ -498,13 +498,15 @@ body.black {
     margin: 0px auto 20px;
   }
   .wrap .con1 .con1-timeline li p {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
   }
   .wrap .con1 .con1-timeline li p span {
     font-size: 24px;
     display: inline-block;
-    margin-top: 5px;
+  }
+  .wrap .con1 .con1-timeline li p > span {
+    margin-top: 10px;
   }
   .wrap .con1 .con1-timeline li.on {
     opacity: 1;
@@ -669,7 +671,7 @@ body.black {
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
     position: absolute;
     top: 0px;
     left: 0px;
@@ -695,11 +697,11 @@ body.black {
     }
   }
   .wrap .con3 .port-list li > h3 {
-    font-size: 2.3em;
-    margin: 35px 0px 25px;
+    font-size: 2.4em;
+    margin: 35px 0px 20px;
   }
   .wrap .con3 .port-list li .tag {
-    font-size: 1.3em;
+    font-size: 16px;
     font-weight: 900;
   }
   .wrap .con3 .port-list li .tag span {
@@ -707,8 +709,8 @@ body.black {
   }
   .wrap .con3 .port-list li .description {
     width: 60%;
-    font-size: 1.2em;
-    margin: 15px auto 40px;
+    font-size: 18px;
+    margin: 10px auto 40px;
   }
   .wrap .con3 .port-list li .btn-wrap {
     display: flex;
@@ -724,7 +726,7 @@ body.black {
     width: 100%;
     padding: 7px 0px;
     border-radius: 40px;
-    font-size: 1.5em;
+    font-size: 20px;
     border: 1px solid #000;
     background: #fff;
     transition: 0.8s;
@@ -736,7 +738,7 @@ body.black {
   .wrap .con3 .port-list li .btn-wrap .plan {
     padding: 7px 0px;
     border-radius: 40px;
-    font-size: 1.5em;
+    font-size: 20px;
     border: 1px solid #000;
     background: #fff;
     transition: 0.8s;
@@ -863,26 +865,33 @@ body.black {
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front:hover .click {
     display: block;
   }
+  .wrap .con4 .artbox-wrap .artbox .card-wrap .front:hover img {
+    transform: scale(1.05);
+  }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front img {
     width: 100%;
     height: 100%;
     transition: 0.6s;
   }
-  .wrap .con4 .artbox-wrap .artbox .card-wrap .front img:hover {
-    transform: scale(1.05);
-  }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front .click {
     width: 3vw;
     height: 3vw;
+    width: 7vw;
+    height: 7vw;
     text-align: center;
     border-radius: 3vw;
+    border-radius: 10vw;
     line-height: 3vw;
+    line-height: 7vw;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     position: absolute;
     top: 1vw;
     right: 1vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 0.8vw;
     display: none;
   }
@@ -970,7 +979,7 @@ body.black {
     padding: 5%;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right p {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 40px;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right img {
@@ -1472,16 +1481,19 @@ body.black {
     width: 65%;
     max-width: 600px;
   }
+  .wrap .con1 .con1-content .con1-text br {
+    display: none;
+  }
   .wrap .con1 .con1-content .con1-text p {
     font-size: 18px;
     margin-bottom: 30px;
   }
   .wrap .con1 .con1-content .con1-text h4 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
   }
   .wrap .con1 .con1-content .con1-text h4 span {
-    margin-right: 20px;
+    margin-right: 16px;
   }
   .wrap .con1 .con1-timeline {
     width: 100%;
@@ -1505,7 +1517,7 @@ body.black {
     margin: 0px auto 20px;
   }
   .wrap .con1 .con1-timeline li p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
   .wrap .con1 .con1-timeline li p span {
@@ -1819,7 +1831,7 @@ body.black {
   }
   .wrap .con4 .con4-main-text > h2 {
     text-transform: uppercase;
-    font-size: 70px;
+    font-size: 67px;
     font-weight: 400;
     overflow: hidden;
   }
@@ -1874,27 +1886,30 @@ body.black {
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front:hover .click {
     display: block;
   }
+  .wrap .con4 .artbox-wrap .artbox .card-wrap .front:hover img {
+    transform: scale(1.05);
+  }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front img {
     width: 100%;
     height: 100%;
     transition: 0.6s;
   }
-  .wrap .con4 .artbox-wrap .artbox .card-wrap .front img:hover {
-    transform: scale(1.05);
-  }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front .click {
-    width: 3vw;
-    height: 3vw;
+    width: 8vw;
+    height: 8vw;
     text-align: center;
-    border-radius: 3vw;
-    line-height: 3vw;
+    border-radius: 8vw;
+    line-height: 8vw;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     position: absolute;
     top: 1vw;
     right: 1vw;
-    font-size: 0.8vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2vw;
     display: none;
   }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .back {
@@ -2131,6 +2146,7 @@ body.black {
   .wrap {
     height: 100vh;
     overflow: hidden;
+    /* 헤더 */
     /* 메뉴 페이지 */
     /* visual */
     /********  con1  ******/
@@ -2305,8 +2321,8 @@ body.black {
   .wrap .visual .visual-main-text > h1 {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 80px;
+    font-size: 10vw;
+    line-height: 14vw;
     color: #fff;
     text-align: center;
     margin-top: -20px;
@@ -2374,13 +2390,17 @@ body.black {
   }
   .wrap .visual .visual-bar-wrap .bar1.on {
     width: 200px;
+    width: 30vw;
     height: 50px;
+    height: 8vw;
     border-radius: 100px;
     background: #f7f6ee;
   }
   .wrap .visual .visual-bar-wrap .bar2.on {
     width: 200px;
     height: 50px;
+    width: 30vw;
+    height: 8vw;
     border-radius: 100px;
     transform: rotate(-10deg);
     z-index: 10;
@@ -2397,18 +2417,22 @@ body.black {
   .wrap .visual .visual-bar-wrap .bar3.on {
     width: 200px;
     height: 50px;
+    width: 30vw;
+    height: 8vw;
     border-radius: 100px;
     background: #ccc;
   }
   .wrap .visual .visual-bar-wrap .bar4.on {
     width: 200px;
     height: 50px;
+    width: 30vw;
+    height: 8vw;
     border-radius: 100px;
     background: #f7f6ee;
   }
   .wrap .visual > h3 {
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
     color: #fff;
     opacity: 0;
@@ -2424,8 +2448,8 @@ body.black {
     transform: translateY(0px);
   }
   .wrap .visual .circle-arrow {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
     margin: 0px auto 0px;
     position: relative;
     opacity: 0;
@@ -2489,6 +2513,9 @@ body.black {
   .wrap .con1 .con1-content .con1-text p {
     font-size: 16px;
     margin: 40px 0px 30px;
+  }
+  .wrap .con1 .con1-content .con1-text p br {
+    display: none;
   }
   .wrap .con1 .con1-content .con1-text h4 {
     font-size: 19px;

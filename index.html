@@ -10,7 +10,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
 
-    <!-- 구글 폰트 -->
+    <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,7 +45,7 @@
         </div>
       </div>
 
-      <!-- 메뉴 페이지 -->
+      <!-- 햄버거바 클릭하면 나오는 메뉴 페이지 -->
       <div class="menu-page">
         <div class="header">
           <h2>
@@ -113,7 +113,7 @@
           />
         </div>
       </div>
-      <!-- 컨테이너 1-->
+      <!-- 컨테이너 1 : about -->
       <div class="con1">
         <div class="con1-main-text">
           <h2>
@@ -130,13 +130,14 @@
           <div class="con1-text">
             <p>
               저는 다양한 웹 언어를 접하는 것에 흥미를 느끼고 있으며, <br />
-              다양한 오류를 해결하는 과정에서 큰 성취감을 느끼고 있습니다.<br />
+              다양한 오류를 해결하는 과정에 큰 성취감을 느끼고 있습니다.<br />
               차분함과 단단함을 바탕으로 실력을 쌓아나가는 퍼블리셔가
               되겠습니다!
             </p>
             <h4><span>#성장</span><span>#경험</span><span>#발전</span></h4>
           </div>
         </div>
+        <!-- con1 타임라인 -->
         <ul class="con1-timeline">
           <li>
             <div class="con1-circle"></div>
@@ -157,9 +158,9 @@
             <p>
               2023.12<br />
               <span>
-                이젠 아카데미 <span class="mobile-none">
+                이젠 아카데미<br> <span class="mobile-none">
                   웹 프레임워크 개발자 양성과정
-                </span><br /> 수료
+                </span>수료
               </span>
               
             </p>
@@ -169,14 +170,15 @@
       <!-- 컨테이너 2 : skills -->
       <div class="con2">
         <h2><span class="en">skills</span></h2>
+        <!-- 스킬 리스트 -->
         <ul class="skill-list">
           <li>
             <div class="skill-bg"></div>
             <img class="scale09" src="img/con2_html.png" alt="html 아이콘" />
             <h4>html</h4>
             <p>
+              웹 표준과 웹 접근성을 준수하여
               태그를 활용한 마크업에 따라 웹의 구조를 작성할 수 있습니다.
-              콘텐츠의 계층에 따라 구조화할 수 있습니다.
             </p>
           </li>
           <li>
@@ -193,7 +195,7 @@
             <img src="img/con2_scss.png" alt="scss 아이콘" />
             <h4>scss</h4>
             <p>
-              sass의 사용법을 알고 있으며, 이를 적용할 수 있습니다. 변수를
+              sass의 사용법을 알고 이를 적용할 수 있습니다. 변수를
               적정하게 활용합니다.
             </p>
           </li>
@@ -209,7 +211,7 @@
             <div class="skill-bg"></div>
             <img src="img/con2_jquery.png" alt="jquery 아이콘" />
             <h4>jquery</h4>
-            <p>라이브러리를 활용할 수 있습니다.</p>
+            <p>라이브러리를 활용하여 사용자의 이벤트에 따른 동작과 애니메이션, 슬라이드 등 필요한 기능을 구현할 수 있습니다.</p>
           </li>
           <li>
             <div class="skill-bg"></div>
@@ -257,8 +259,8 @@
       <div class="con3">
         <div class="con3-main-text">
           <h2 class="en">portfolio</h2>
-          <!-- <p>저의 작업물을 소개합니다!</p> -->
         </div>
+        <!-- 포트폴리오 리스트 -->
         <ul class="port-list">
           <li class="port1">
             <div class="web-img">
@@ -266,7 +268,7 @@
             </div>
             <h3 class="en">Pfizer</h3>
             <p class="tag">
-              <span>#반응형</span><span>#모던웹</span><span>#깔끔</span>
+              <span>#반응형</span><span>#신뢰감</span><span>#깔끔</span>
             </p>
             <p class="description">
               한국화이자를 리뉴얼한 웹사이트입니다.<br />
@@ -282,21 +284,19 @@
           </li>
           <li class="port2">
             <div class="web-img">
-              <img src="img/con3_web2.jpg" alt="웹사이트 이미지" />
+              <img src="img/con3_2_web.png" alt="네이버 웹툰 리디자인 이미지" />
             </div>
             <h3 class="en">Naver Webtoon</h3>
             <p class="tag">
-              <span>#반응형</span><span>#모던웹</span><span>#깔끔</span>
+              <span>#역동성</span><span>#반응형</span>
             </p>
             <p class="description">
-              SONO를 리뉴얼한 웹사이트입니다.<br />기존에 있던 것을 어떠한
-              이유로 수정하였습니다. 기존에 있던 것을 어떠한 이유로
-              수정하였습니다.
+              네이버웹툰을 리뉴얼한 웹사이트입니다.
             </p>
             <div class="btn-wrap">
               <div class="plan plan2">기획서</div>
               <div>
-                <a href="#">웹사이트</a>
+                <a target="_blank" href="https://growanndev.github.io/naverwebtoon/">웹사이트</a>
               </div>
             </div>
           </li>
@@ -306,13 +306,12 @@
             </div>
             <h3 class="en">React</h3>
             <p class="tag">
-              <span>#반응형</span><span>#모던웹</span><span>#깔끔</span>
+              <span>#컴포넌트</span><span>#라우터</span>
             </p>
             <p class="description">
               리액트를 활용하여 기존의 쇼핑몰을 구현하였습니다.
             </p>
             <div class="btn-wrap">
-              <div class="plan plan3">기획서</div>
               <div>
                 <a target="_blank" href="https://growanndev.github.io/"
                   >웹사이트</a
@@ -321,10 +320,16 @@
             </div>
           </li>
         </ul>
-        <!-- portfolio 모달 -->
+        <!-- portfolio 기획서 모달 -->
         <div class="modal-wrap p-modal1">
           <div class="modal-content">
             <img src="img/con3_1_plan.png" />
+            <img class="close" src="img/con3_modal_x.png" alt="닫기버튼" />
+          </div>
+        </div>
+        <div class="modal-wrap p-modal2">
+          <div class="modal-content">
+            <img src="img/con3_2_plan.png" />
             <img class="close" src="img/con3_modal_x.png" alt="닫기버튼" />
           </div>
         </div>
@@ -391,7 +396,7 @@
             </div>
           </div>
         </div>
-        <!-- artwork 모달 -->
+        <!-- artwork 상세설명 모달 -->
         <div class="modal-wrap a-modal1">
           <div class="modal-content">
             <img src="img/con4_1.png">
@@ -468,7 +473,7 @@
             <img src="img/con4_5.png">
             <div class="modal-right">
               <div class="modal-text">
-                <p>크리스마스 세일 이벤트를 주제로 제작하였습니다.
+                <p>크리스마스 세일 이벤트 배너를 제작하였습니다.
                 </p>
                 <div class="icon">
                   <img src="img/con2_ai.png" alt="일러스트 아이콘">
@@ -483,14 +488,16 @@
       </div>
       <!-- 컨테이너 5 : contact -->
       <div class="con5">
+        <!-- vision -->
         <div class="vision">
           <h2 class="en">vision</h2>
           <p>
-            다양한 웹 언어를 접하고<br />
-            사용자에게 더 부드럽고 편리하게 다가갈 수 있도록<br />
-            차분하고 단단하게 쌓아가는 웹 퍼블리셔가 되겠습니다.
+            앞으로 더 다양한 웹 언어를 접하며<br />
+            논리와 정확성을 기반으로<br />
+            컴퓨터와의 소통에 정진하는 퍼블리셔가 되겠습니다.
           </p>
         </div>
+        <!-- contact -->
         <div class="contact">
           <ul class="contact-left">
             <li>

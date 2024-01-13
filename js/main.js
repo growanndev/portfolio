@@ -75,6 +75,13 @@ $(function () {
     $("body").css({ overflowY: "hidden" });
   });
 
+  $(".plan2").click(function () {
+    $(".p-modal2").css({ display: "block" });
+    $("body").css({ overflowY: "hidden" });
+  });
+
+ 
+
 
 
 /* close 클릭하면 모든 모달 display:none; */
