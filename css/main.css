@@ -2135,8 +2135,9 @@ body.black {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 4.5vw;
     overflow: hidden;
+    font-weight: 300;
   }
   .load-page h2 span {
     display: inline-block;
@@ -2432,7 +2433,7 @@ body.black {
   }
   .wrap .visual > h3 {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 200;
     color: #fff;
     opacity: 0;
@@ -2448,8 +2449,8 @@ body.black {
     transform: translateY(0px);
   }
   .wrap .visual .circle-arrow {
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     margin: 0px auto 0px;
     position: relative;
     opacity: 0;
@@ -2518,7 +2519,7 @@ body.black {
     display: none;
   }
   .wrap .con1 .con1-content .con1-text h4 {
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 600;
   }
   .wrap .con1 .con1-content .con1-text h4 span {
@@ -2546,12 +2547,13 @@ body.black {
     margin: 0px auto 20px;
   }
   .wrap .con1 .con1-timeline li p {
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
   }
   .wrap .con1 .con1-timeline li p span {
     display: inline-block;
     margin-top: 5px;
+    font-size: 16px;
   }
   .wrap .con1 .con1-timeline li p .mobile-none {
     display: none;
