@@ -2120,7 +2120,7 @@ body.black {
 /* 모바일 */
 @media (max-width: 767px) {
   /* 가로스크롤 방지 */
-  body {
+  html, body {
     overflow-x: hidden;
   }
   /* 로드 페이지 */
@@ -2327,7 +2327,7 @@ body.black {
   .wrap .visual .visual-main-text > h1 {
     text-transform: uppercase;
     font-weight: 500;
-    font-size: 11vw;
+    font-size: 10vw;
     line-height: 14vw;
     color: #fff;
     text-align: center;
