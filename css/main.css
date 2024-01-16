@@ -2150,8 +2150,6 @@ body.black {
     animation: text-up 1s forwards;
   }
   .wrap {
-    height: 100vh;
-    overflow: hidden;
     /* 헤더 */
     /* 메뉴 페이지 */
     /* visual */
