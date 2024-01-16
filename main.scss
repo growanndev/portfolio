@@ -128,8 +128,6 @@ body.black {
 }
 
 .wrap {
-  height: 100vh;
-  overflow: hidden;
   > .header {
     width: 100%;
     display: flex;
@@ -1227,8 +1225,6 @@ body.black {
 }
 
 .wrap {
-  height: 100vh;
-  overflow: hidden;
   > .header {
     width: 100%;
     display: flex;
@@ -2334,8 +2330,6 @@ body.black {
 }
 
 .wrap {
-  // height: 100vh;
-  // overflow: hidden;
   /* 헤더 */
   > .header {
     width: 100%;
@@ -2349,6 +2343,7 @@ body.black {
     opacity: 0;
     h2 {
       font-size:14px;
+      font-weight:300;
       a {
         color: #fff;
       }
@@ -2368,7 +2363,6 @@ body.black {
         height:18px;
         position: relative;
         li {
-          // width: 60%;
           width:100%;
           height: 2px;
           background: #fff;
@@ -2376,7 +2370,6 @@ body.black {
           left: 0px;
           transition: 0.8s;
           &:nth-of-type(1) {
-            // top: 0px;
             top: 0%;
           }
           &:nth-of-type(2) {
@@ -2384,7 +2377,6 @@ body.black {
             transform: translateY(-50%);
           }
           &:nth-of-type(3) {
-            // bottom: 0px;
             bottom: 0%;
           }
         }
@@ -2418,7 +2410,9 @@ body.black {
     align-items: center;
     gap: 5vh;
     transition: 1s;
-    /* 햄버거바 누르면 나오는 !!! menu-page !!!! 헤더*/
+
+
+    /* 햄버거바 누르면 나오는 menu-page 헤더 */
     .header {
       width: 100%;
       display: flex;
@@ -2487,6 +2481,7 @@ body.black {
         width: 100%;
       }
     }
+    /* menu-page 활성화 */
     &.active {
       width: 100%;
       height: 100vh;
@@ -2504,15 +2499,13 @@ body.black {
     gap: 120px;
     overflow-x: hidden;
     .visual-main-text {
-      // opacity:0;
       > h1 {
         text-transform: uppercase;
         font-weight: 500;
         font-size:10vw;
-        line-height:14vw;
+        line-height:10vw;
         color: #fff;
         text-align: center;
-        margin-top: -20px;
         transform: translateX(0px);
         transition: 1s;
         opacity: 0;
@@ -2542,6 +2535,7 @@ body.black {
       }
     }
 
+    /* visual bar 쌓이는 구역 */
     .visual-bar-wrap {
       width: 30%;
       height:45vw;
@@ -2593,7 +2587,7 @@ body.black {
         animation: bar-move 2s infinite linear alternate;
       }
 
-      /* 노란색 bar 무한으로 움직이는 효과 */
+      /* 노란색 bar 무한 애니메이션 */
       @keyframes bar-move {
         50% {
           transform: translate(-40px) rotate(-10deg);
@@ -2634,8 +2628,8 @@ body.black {
     }
     .circle-arrow {
       width: 170px;
-      height: 170px;
-      margin: 0px auto 0px;
+      height:170px;
+      margin: 0px auto;
       position: relative;
       opacity: 0;
       transform: translateY(30px);
@@ -2670,16 +2664,16 @@ body.black {
     width: 100%;
     padding-top:120px;
     .con1-main-text {
-      margin-bottom: 40px;
-      width:70%;
+      margin-bottom: 35px;
+      width:75%;
       margin:0px auto;
       h2 {
         overflow: hidden;
         span {
           font-family: "Marcellus", serif;
           text-transform: uppercase;
-          font-size:50px;
-          
+          font-size:55px;
+          line-height:57px;
           font-weight: 300;
           display: inline-block;
           transform: translateY(100%);
@@ -2695,7 +2689,7 @@ body.black {
       }
     }
     .con1-content {
-      width: 70%;
+      width: 75%;
       margin:40px auto 0px;
       img {
         width: 100%;
@@ -2739,7 +2733,6 @@ body.black {
           margin: 0px auto 20px;
         }
         p {
-          // font-size: 1.4em;
           font-size:14px;
           text-align: center;
           span{
@@ -2771,7 +2764,6 @@ body.black {
       text-align: right;
       margin-bottom: 40px;
       color: #fff;
-      // color: rgba(255,255,255,0.9);
       overflow: hidden;
       span {
         display: inline-block;
@@ -2783,12 +2775,10 @@ body.black {
       }
     }
     .skill-list {
-      // background: #000;
       border-top: 2px solid rgba(255, 255, 255, 0.2);
 
       li {
         color: #fff;
-        // height: 60px;
         border-bottom: 2px solid rgba(255, 255, 255, 0.2);
         display: flex;
         flex-direction:column;
@@ -2808,12 +2798,10 @@ body.black {
         }
         img {
           display: inline-block;
-         width:30px;
-          // width: 0%;
-          overflow:hidden;
+          width:30px;
           transform: translateY(-3px);
           transition: 1s;
-          // display:none;
+          opacity:0;
         }
         h4 {
           font-family: "Marcellus", serif;
@@ -2823,18 +2811,7 @@ body.black {
           color: #fff;
         }
         p {
-          // display: none;
-          opacity: 1;
           font-size:15px;
-          // transform: translateY(40px);
-          // animation: go-up 1s forwards;
-        }
-        /* 글자 올라오는 효과 */
-        @keyframes go-up {
-          100% {
-            transform: translate(10px, 0px);
-            opacity: 1;
-          }
         }
       }
       
@@ -2850,28 +2827,26 @@ body.black {
   .con3 {
     width: 100%;
     position: relative;
-    padding-top: 250px;
-
+    padding-top: 180px;
     .con3-main-text {
-      text-align: center;
-      display: inline-block;
-      position: sticky;
-      z-index: -1;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       > h2 {
+        text-align: center;
         text-transform: uppercase;
-        margin-bottom: 10px;
-        font-size:8vw;
+        margin-bottom: 50px;
+        font-size:2vw;
         font-weight: 300;
+        transition:1s;
+      }
+      /* 글씨 커지는 효과 */
+      &.on h2{
+        font-size:10vw;
       }
     }
     .port-list {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 100px;
+      gap: 80px;
       li {
         width: 80%;
         text-align: center;

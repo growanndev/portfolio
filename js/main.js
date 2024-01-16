@@ -14,24 +14,12 @@ $(function () {
     setTimeout(function () {
       $(".wrap").css({ overflow: "visible" });
     }, 200);
-    // $('.load-page').stop().animate({opacity:0},100, function(){
-    //     $('.wrap').css({overflow:'visible'});
-    // })
   }, 1400);
 
   /* 햄버거바 클릭하면 메뉴 페이지 나옴 */
   let hamClick = 0;
   $(".ham-menu").click(function () {
-    /* 햄버거바 변화 */
-    // $(this).toggleClass("on");
-    // if (hamClick == 0) {
-    //   $(".ham-menu p").text("CLOSE");
-    //   hamClick = 1;
-    //   //console.log(hamClick);
-    // } else {
-    //   $(".ham-menu p").text("MENU");
-    //   hamClick = 0;
-    // }
+
     if (hamClick == 0) {
       $(".wrap>.header").stop().animate({ opacity: 0 });
       hamClick = 1;
@@ -232,29 +220,32 @@ $('.artbox').click(function(){
       });
     }
 
+    
+    
     /* con2 스크롤 효과 */
 
-    // if (scroll > con2) {
-    //   $(".con2").addClass("on");
-    // }
-    /* con2 배경색 바뀜 효과 */
     if (scroll > con2 - 150 && scroll < con3) {
-      //   $("body").addClass("black");
+
+      /* 배경색 바뀌고 con2 효과 */
       $("body").css({ backgroundColor: "#000" });
       setTimeout(function () {
         $(".con2").addClass("on");
       }, 500);
-      //타임라인 배경 바뀌기
+      // con1 타임라인 배경색 바뀌기
       $(".con1-timeline").css({ backgroundColor: "#000" });
-      //글자색 바뀌기 (눈 아픔 방지)
+      //글자색 바뀌기 (눈 아픔 방지, 옅은 회색)
       $(".skill-list li h4").css({ color: "#ccc" });
       /* header 색상 바뀌는 효과 */
       $(".header").removeClass("color");
+      /* 모바일버전  skill img */
+      $('.skill-list li img').css({opacity:1});
+
     } else {
-      //   $("body").removeClass("black");
+     
       $("body").css({ backgroundColor: "transparent" });
       $(".con1-timeline").css({ backgroundColor: "#f4f4f4" });
       $(".skill-list li h4").css({ color: "#fff" });
+      $('.skill-list li img').css({opacity:0});
     }
 
     /* con3 스크롤 효과 */
@@ -262,6 +253,12 @@ $('.artbox').click(function(){
     if (scroll > con3) {
       /* header 색상 바뀌는 효과 */
       $(".header").addClass("color");
+
+      /* 모바일용 효과 */
+      setTimeout(function(){
+        $('.con3-main-text').addClass('on');
+      },300);
+      
     }
 
     let port1 = $(".port1").offset().top;

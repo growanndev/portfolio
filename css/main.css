@@ -108,8 +108,6 @@ body.black {
     animation: text-up 1s forwards;
   }
   .wrap {
-    height: 100vh;
-    overflow: hidden;
     /* 메뉴 페이지 */
     /* visual */
     /********  con1  ******/
@@ -1124,8 +1122,6 @@ body.black {
     animation: text-up 1s forwards;
   }
   .wrap {
-    height: 100vh;
-    overflow: hidden;
     /* 메뉴 페이지 */
     /* visual */
     /********  con1  ******/
@@ -2177,6 +2173,7 @@ body.black {
   }
   .wrap > .header h2 {
     font-size: 14px;
+    font-weight: 300;
   }
   .wrap > .header h2 a {
     color: #fff;
@@ -2239,7 +2236,8 @@ body.black {
     align-items: center;
     gap: 5vh;
     transition: 1s;
-    /* 햄버거바 누르면 나오는 !!! menu-page !!!! 헤더*/
+    /* 햄버거바 누르면 나오는 menu-page 헤더 */
+    /* menu-page 활성화 */
   }
   .wrap .menu-page .header {
     width: 100%;
@@ -2321,15 +2319,15 @@ body.black {
     flex-direction: column;
     gap: 120px;
     overflow-x: hidden;
+    /* visual bar 쌓이는 구역 */
   }
   .wrap .visual .visual-main-text > h1 {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 10vw;
-    line-height: 14vw;
+    line-height: 10vw;
     color: #fff;
     text-align: center;
-    margin-top: -20px;
     transform: translateX(0px);
     transition: 1s;
     opacity: 0;
@@ -2365,7 +2363,7 @@ body.black {
     flex-direction: column;
     gap: 50px;
     position: relative;
-    /* 노란색 bar 무한으로 움직이는 효과 */
+    /* 노란색 bar 무한 애니메이션 */
   }
   .wrap .visual .visual-bar-wrap .bar {
     width: 10px;
@@ -2446,7 +2444,7 @@ body.black {
   .wrap .visual .circle-arrow {
     width: 170px;
     height: 170px;
-    margin: 0px auto 0px;
+    margin: 0px auto;
     position: relative;
     opacity: 0;
     transform: translateY(30px);
@@ -2476,8 +2474,8 @@ body.black {
     /* con1 timeline*/
   }
   .wrap .con1 .con1-main-text {
-    margin-bottom: 40px;
-    width: 70%;
+    margin-bottom: 35px;
+    width: 75%;
     margin: 0px auto;
   }
   .wrap .con1 .con1-main-text h2 {
@@ -2486,7 +2484,8 @@ body.black {
   .wrap .con1 .con1-main-text h2 span {
     font-family: "Marcellus", serif;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 55px;
+    line-height: 57px;
     font-weight: 300;
     display: inline-block;
     transform: translateY(100%);
@@ -2499,7 +2498,7 @@ body.black {
     letter-spacing: -5px;
   }
   .wrap .con1 .con1-content {
-    width: 70%;
+    width: 75%;
     margin: 40px auto 0px;
   }
   .wrap .con1 .con1-content img {
@@ -2590,7 +2589,6 @@ body.black {
     padding: 30px 5vw 30px 15vw;
     position: relative;
     transition: 1s;
-    /* 글자 올라오는 효과 */
   }
   .wrap .con2 .skill-list li .skill-bg {
     width: 0%;
@@ -2604,9 +2602,9 @@ body.black {
   .wrap .con2 .skill-list li img {
     display: inline-block;
     width: 30px;
-    overflow: hidden;
     transform: translateY(-3px);
     transition: 1s;
+    opacity: 0;
   }
   .wrap .con2 .skill-list li h4 {
     font-family: "Marcellus", serif;
@@ -2616,14 +2614,7 @@ body.black {
     color: #fff;
   }
   .wrap .con2 .skill-list li p {
-    opacity: 1;
     font-size: 15px;
-  }
-  @keyframes go-up {
-    100% {
-      transform: translate(10px, 0px);
-      opacity: 1;
-    }
   }
   .wrap .con2.on > h2 span {
     transform: translateY(0px);
@@ -2631,29 +2622,28 @@ body.black {
   .wrap .con3 {
     width: 100%;
     position: relative;
-    padding-top: 250px;
+    padding-top: 180px;
     /* 모달박스 공통 적용 */
   }
   .wrap .con3 .con3-main-text {
-    text-align: center;
-    display: inline-block;
-    position: sticky;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    /* 글씨 커지는 효과 */
   }
   .wrap .con3 .con3-main-text > h2 {
+    text-align: center;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 8vw;
+    margin-bottom: 50px;
+    font-size: 2vw;
     font-weight: 300;
+    transition: 1s;
+  }
+  .wrap .con3 .con3-main-text.on h2 {
+    font-size: 10vw;
   }
   .wrap .con3 .port-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
     /* port-list 스크롤에 따라 on 붙을 때 */
   }
   .wrap .con3 .port-list li {
