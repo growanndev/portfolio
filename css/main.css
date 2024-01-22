@@ -32,6 +32,7 @@ a {
   font-family: "Marcellus", serif;
 }
 
+/* 가로 스크롤 방지 */
 body {
   width: 100%;
   overflow-x: hidden;
