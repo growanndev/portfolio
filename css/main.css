@@ -1045,10 +1045,10 @@ body.black {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 60px;
   }
   .wrap .con5 .contact .contact-left li {
-    width: 55%;
+    width: 50%;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -2079,7 +2079,7 @@ body.black {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
   }
   .wrap .con5 .contact .contact-left li {
     width: 55%;
@@ -3096,7 +3096,7 @@ body.black {
     gap: 10px;
   }
   .wrap .con5 .contact .contact-left li img {
-    width: 20px;
+    width: 25px;
     display: block;
   }
   .wrap .con5 .contact .contact-left li a {
