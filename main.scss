@@ -50,7 +50,7 @@ body{
   }
 }
 
-/* body 스크롤에 따라 배경색 검은색으로 바뀌기 */
+/* 스크롤에 따라 body(배경색) 검은색으로 바뀌기 */
 body {
   transition: 1s;
 }
@@ -75,6 +75,8 @@ body.black {
 @media (min-width: 1221px) {
 
 
+  /* 커스텀 커서 */
+
   body {
     cursor: none;
   }
@@ -83,11 +85,8 @@ body.black {
     width: 30px;
     height: 30px;
     cursor: none;
-    // background: rgba(255, 255, 255, 0.05);
     background: rgba(255, 255, 255, 0.8);
-    // backdrop-filter: blur(3px);
     border: 1px solid rgba(0, 0, 0, 0.1);
-    // background:rgba(0,0,0,0.8);
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -137,7 +136,6 @@ body.black {
     z-index: 99;
     opacity: 0;
     h2 {
-      // font-size: 1.5vw;
       font-size:30px;
       a {
         color: #fff;
@@ -147,7 +145,6 @@ body.black {
       display: flex;
       justify-content: center;
       align-items: center;
-      // gap: 1vw;
       gap:15px;
       cursor: pointer;
       p {
@@ -155,13 +152,10 @@ body.black {
         font-size: 30px;
       }
       .hambar {
-        // width: 3.5vw;
-        // height: 1.7vw;
         width:40px;
         height:30px;
         position: relative;
         li {
-          // width: 60%;
           width:100%;
           height: 3px;
           background: #fff;
@@ -169,7 +163,6 @@ body.black {
           left: 0px;
           transition: 0.8s;
           &:nth-of-type(1) {
-            // top: 0px;
             top: 0%;
           }
           &:nth-of-type(2) {
@@ -177,7 +170,6 @@ body.black {
             transform: translateY(-50%);
           }
           &:nth-of-type(3) {
-            // bottom: 0px;
             bottom: 0%;
           }
         }
@@ -280,6 +272,7 @@ body.black {
         width: 100%;
       }
     }
+    /* 메뉴 페이지 눌렀을때 활성화 */
     &.active {
       width: 100%;
       height: 100vh;
@@ -297,11 +290,9 @@ body.black {
     gap: 120px;
     overflow-x: hidden;
     .visual-main-text {
-      // opacity:0;
       > h1 {
         text-transform: uppercase;
         font-weight: 500;
-        // font-size: 10em;
         font-size:8vw;
         color: #fff;
         text-align: center;
@@ -334,6 +325,7 @@ body.black {
       }
     }
 
+    /* visual 바 쌓이는 부분 */
     .visual-bar-wrap {
       width: 30%;
       height: 40vh;
@@ -342,7 +334,6 @@ body.black {
       flex-direction: column;
       gap: 50px;
       position: relative;
-      // border:1px solid #f00;
 
       .bar {
         width: 10px;
@@ -381,7 +372,6 @@ body.black {
         width: 340px;
         height: 80px;
         border-radius: 100px;
-        // background: #cac9c3;
         transform: rotate(-10deg);
         z-index: 10;
         animation: bar-move 2s infinite linear alternate;
@@ -426,6 +416,8 @@ body.black {
         transform: translateY(0px);
       }
     }
+
+    /* 무한으로 돌아가는 원 */
     .circle-arrow {
       width: 270px;
       height: 270px;
@@ -462,7 +454,6 @@ body.black {
 
   .con1 {
     width: 100%;
-    // padding-top: 150px;
     padding-top:180px;
     .con1-main-text {
       margin-bottom: 40px;
@@ -472,7 +463,6 @@ body.black {
         span {
           font-family: "Marcellus", serif;
           text-transform: uppercase;
-          // font-size: 4.9em;
           font-size:125px;
           font-weight: 300;
           display: inline-block;
@@ -533,7 +523,6 @@ body.black {
           margin: 0px auto 20px;
         }
         p {
-          // font-size: 1.4em;
           font-size:20px;
           text-align: center;
           span{
@@ -551,25 +540,7 @@ body.black {
         transform: translateY(-10px);
       }
     }
-    .more {
-      width: 240px;
-      margin: 0px auto;
-      a {
-        font-size: 2.4em;
-        text-align: center;
-        display: block;
-        text-transform: uppercase;
-        width: 100%;
-        padding: 10px 0px;
-        border: 1px solid #111;
-        border-radius: 70px;
-        transition: 0.7s;
-        &:hover {
-          background: #000;
-          color: #fff;
-        }
-      }
-    }
+    
   }
 
   /* con2 */
@@ -584,7 +555,6 @@ body.black {
       text-align: right;
       margin-bottom: 40px;
       color: #fff;
-      // color: rgba(255,255,255,0.9);
       overflow: hidden;
       span {
         display: inline-block;
@@ -596,7 +566,6 @@ body.black {
       }
     }
     .skill-list {
-      // background: #000;
       border-top: 2px solid rgba(255, 255, 255, 0.2);
 
       li {
@@ -619,7 +588,6 @@ body.black {
         }
         img {
           display: inline-block;
-          // width: 7%;
           width: 0%;
           transform: translateY(-3px);
           transition: 1s;
@@ -731,16 +699,43 @@ body.black {
         }
 
         /* 마우스 올리면 웹페이지 보이게 하기 */
-        .web-img:hover img {
-          animation: down 15s infinite;
+        .web-img1:hover img {
+          animation: web1 12s infinite;
         }
-        @keyframes down {
+        @keyframes web1 {
           0% {
             margin-top: 0px;
           }
           50% {
-            // margin-top: calc(-3293px + 22vw);
-            transform: translateY(-82%);
+            transform: translateY(-81.5%);
+          }
+          100% {
+            margin-top: 0px;
+          }
+        }
+        .web-img2:hover img {
+          animation: web2 16s infinite;
+        }
+        @keyframes web2 {
+          0% {
+            margin-top: 0px;
+          }
+          50% {
+            transform: translateY(-88%);
+          }
+          100% {
+            margin-top: 0px;
+          }
+        }
+        .web-img3:hover img {
+          animation: web3 8s infinite;
+        }
+        @keyframes web3 {
+          0% {
+            margin-top: 0px;
+          }
+          50% {
+            transform: translateY(-72%);
           }
           100% {
             margin-top: 0px;
@@ -748,11 +743,12 @@ body.black {
         }
         > h3 {
           font-size: 2.4em;
-          margin:35px 0px 20px;
+          margin-top:35px;
         }
         .tag {
           font-size: 16px;
           font-weight: 900;
+          margin:15px 0px;
           span {
             margin: 0px 15px;
           }
@@ -780,8 +776,6 @@ body.black {
               transition: 0.8s;
 
               &:hover {
-                // background: #e8e08b;
-                // border: 1px solid #ded685;
                 background: #111;
                 color: #fff;
               }
@@ -795,8 +789,6 @@ body.black {
             background: #fff;
             transition: 0.8s;
             &:hover {
-              // background: #e8e08b;
-              // border: 1px solid #ded685;
               background: #111;
               color: #fff;
             }
@@ -833,8 +825,6 @@ body.black {
       height: 100%;
       background: rgba(0, 0, 0, 0.7);
       padding: 150px 0px;
-      // justify-content: center;
-      // align-items: center;
       position: fixed;
       top: 0px;
       left: 0px;
@@ -844,8 +834,6 @@ body.black {
       .modal-content {
         width: 70%;
         margin: 0px auto;
-        // padding: 100px;
-        // background: #fff;
         border-radius: 50px;
         text-align: center;
         position: relative;
@@ -875,9 +863,6 @@ body.black {
     .con4-main-text {
       width: 70%;
       text-align: right;
-      // display: flex;
-      // justify-content: space-between;
-      // align-items: end;
       margin: 0px auto;
       > h2 {
         text-transform: uppercase;
@@ -901,6 +886,8 @@ body.black {
         transform: translateY(100%);
       }
     }
+
+    /* 작업물 wrap */
     .artbox-wrap {
       height: 60vw;
       position: relative;
@@ -943,20 +930,14 @@ body.black {
           }
           /* 마우스 호버시 나오는 클릭버튼 */
           .front .click{
-            width:3vw;
-            height:3vw;
             width:7vw;
             height:7vw;
             text-align:center;
-            border-radius:3vw;
             border-radius:10vw;
-            line-height:3vw;
             line-height:7vw;
             background:rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(5px);
             position:absolute;
-            top:1vw;
-            right:1vw;
             top:50%;
             left:50%;
             transform:translate(-50%,-50%);
@@ -973,7 +954,7 @@ body.black {
         position: absolute;
       }
 
-      /* 각 작업물 크기대로 설정해주면 됨 !!!! */
+      /* 각 작업물 크기 설정 !!!! */
       .artbox1,
       .artbox3,
       .artbox5 {
@@ -1022,7 +1003,6 @@ body.black {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.8);
-      // padding: 150px 0px;
       justify-content: center;
       align-items: center;
       position: fixed;
@@ -1045,22 +1025,17 @@ body.black {
         width: 50%;
         height:35vw;
         margin: 0px auto;
-        // padding: 100px;
-        // background: #fff;
         text-align: center;
         position: relative;
-        // background: #f4f4f4;
         background:#fff;
         display:flex;
         > img {
           width: 25vw;
           height:35vw;
-          // height:34vw;
           object-fit:cover;
           display: block;
         }
         .modal-right{
-          // width:25vw;
           width:50%;
           display:flex;
           justify-content:center;
@@ -1087,6 +1062,12 @@ body.black {
     }
   }
 
+
+  /* con5 */
+  /* con5 */
+  /* con5 */
+  /* con5 */
+
   .con5 {
     width: 100%;
     height: 100vh;
@@ -1096,7 +1077,7 @@ body.black {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 30px 5vw;
+      padding: 30px 10vw 30px 5vw;
       border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
       border-top: 1.5px solid rgba(255, 255, 255, 0.2);
 
@@ -1111,6 +1092,7 @@ body.black {
         color: #fff;
       }
     }
+    /* contact 왼쪽 부분 */
     .contact {
       height: 77vh;
       display: flex;
@@ -1146,6 +1128,7 @@ body.black {
           }
         }
       }
+      /* contact 오른쪽 부분 */
       .contact-right {
         width: 50%;
         .contact-h2-wrap {
@@ -1234,7 +1217,6 @@ body.black {
     z-index: 99;
     opacity: 0;
     h2 {
-      // font-size: 1.5vw;
       font-size:22px;
       a {
         color: #fff;
@@ -1244,7 +1226,6 @@ body.black {
       display: flex;
       justify-content: center;
       align-items: center;
-      // gap: 1vw;
       gap:12px;
       cursor: pointer;
       p {
@@ -1263,7 +1244,6 @@ body.black {
           left: 0px;
           transition: 0.8s;
           &:nth-of-type(1) {
-            // top: 0px;
             top: 0%;
           }
           &:nth-of-type(2) {
@@ -1271,7 +1251,6 @@ body.black {
             transform: translateY(-50%);
           }
           &:nth-of-type(3) {
-            // bottom: 0px;
             bottom: 0%;
           }
         }
@@ -1361,7 +1340,6 @@ body.black {
       a {
         font-family: "Marcellus", serif;
         color: #fff;
-        // font-size: 4vw;
         font-size:50px;
         font-weight: 300;
       }
@@ -1392,7 +1370,6 @@ body.black {
     gap: 120px;
     overflow-x: hidden;
     .visual-main-text {
-      // opacity:0;
       > h1 {
         text-transform: uppercase;
         font-weight: 500;
@@ -1428,6 +1405,7 @@ body.black {
       }
     }
 
+    /* visual 바 쌓이는 부분 */
     .visual-bar-wrap {
       width: 40%;
       height: 35vw;
@@ -1436,7 +1414,6 @@ body.black {
       flex-direction: column;
       gap: 50px;
       position: relative;
-      // border:1px solid #f00;
 
       .bar {
         width: 10px;
@@ -1475,7 +1452,6 @@ body.black {
         width: 250px;
         height: 60px;
         border-radius: 100px;
-        // background: #cac9c3;
         transform: rotate(-10deg);
         z-index: 10;
         animation: bar-move 2s infinite linear alternate;
@@ -1520,6 +1496,8 @@ body.black {
         transform: translateY(0px);
       }
     }
+
+    /* 무한으로 돌아가는 원 */
     .circle-arrow {
       width: 240px;
       height: 240px;
@@ -1556,7 +1534,6 @@ body.black {
 
   .con1 {
     width: 100%;
-    // padding-top: 150px;
     padding-top:180px;
     .con1-main-text {
       margin-bottom: 40px;
@@ -1566,7 +1543,6 @@ body.black {
         span {
           font-family: "Marcellus", serif;
           text-transform: uppercase;
-          // font-size: 4.9em;
           font-size:90px;
           font-weight: 300;
           display: inline-block;
@@ -1630,7 +1606,6 @@ body.black {
           margin: 0px auto 20px;
         }
         p {
-          // font-size: 1.4em;
           font-size:18px;
           text-align: center;
           span{
@@ -1648,25 +1623,7 @@ body.black {
         transform: translateY(-5px);
       }
     }
-    .more {
-      width: 240px;
-      margin: 0px auto;
-      a {
-        font-size: 2.4em;
-        text-align: center;
-        display: block;
-        text-transform: uppercase;
-        width: 100%;
-        padding: 10px 0px;
-        border: 1px solid #111;
-        border-radius: 70px;
-        transition: 0.7s;
-        &:hover {
-          background: #000;
-          color: #fff;
-        }
-      }
-    }
+    
   }
 
   /* con2 */
@@ -1681,7 +1638,6 @@ body.black {
       text-align: right;
       margin-bottom: 40px;
       color: #fff;
-      // color: rgba(255,255,255,0.9);
       overflow: hidden;
       span {
         display: inline-block;
@@ -1693,7 +1649,6 @@ body.black {
       }
     }
     .skill-list {
-      // background: #000;
       border-top: 2px solid rgba(255, 255, 255, 0.2);
 
       li {
@@ -1716,7 +1671,6 @@ body.black {
         }
         img {
           display: inline-block;
-          // width: 7%;
           width: 0%;
           transform: translateY(-3px);
           transition: 1s;
@@ -1828,16 +1782,43 @@ body.black {
         }
 
         /* 마우스 올리면 웹페이지 보이게 하기 */
-        .web-img:hover img {
-          animation: down 15s infinite;
+        .web-img1:hover img {
+          animation: web1 11s infinite;
         }
-        @keyframes down {
+        @keyframes web1 {
           0% {
             margin-top: 0px;
           }
           50% {
-            // margin-top: calc(-3293px + 22vw);
             transform: translateY(-82%);
+          }
+          100% {
+            margin-top: 0px;
+          }
+        }
+        .web-img2:hover img {
+          animation: web2 16s infinite;
+        }
+        @keyframes web2 {
+          0% {
+            margin-top: 0px;
+          }
+          50% {
+            transform: translateY(-89%);
+          }
+          100% {
+            margin-top: 0px;
+          }
+        }
+        .web-img3:hover img {
+          animation: web3 8s infinite;
+        }
+        @keyframes web3 {
+          0% {
+            margin-top: 0px;
+          }
+          50% {
+            transform: translateY(-72%);
           }
           100% {
             margin-top: 0px;
@@ -1877,8 +1858,6 @@ body.black {
               transition: 0.8s;
 
               &:hover {
-                // background: #e8e08b;
-                // border: 1px solid #ded685;
                 background: #111;
                 color: #fff;
               }
@@ -1893,8 +1872,6 @@ body.black {
             transition: 0.8s;
             cursor:pointer;
             &:hover {
-              // background: #e8e08b;
-              // border: 1px solid #ded685;
               background: #111;
               color: #fff;
             }
@@ -1931,8 +1908,6 @@ body.black {
       height: 100%;
       background: rgba(0, 0, 0, 0.7);
       padding: 150px 0px;
-      // justify-content: center;
-      // align-items: center;
       position: fixed;
       top: 0px;
       left: 0px;
@@ -1942,8 +1917,6 @@ body.black {
       .modal-content {
         width: 75%;
         margin: 0px auto;
-        // padding: 100px;
-        // background: #fff;
         border-radius: 50px;
         text-align: center;
         position: relative;
@@ -1973,9 +1946,6 @@ body.black {
     .con4-main-text {
       width: 70%;
       text-align: right;
-      // display: flex;
-      // justify-content: space-between;
-      // align-items: end;
       margin: 0px auto;
       > h2 {
         text-transform: uppercase;
@@ -1999,6 +1969,8 @@ body.black {
         transform: translateY(100%);
       }
     }
+
+    /* 작업물 wrap */
     .artbox-wrap {
       height: 76vw;
       position: relative;
@@ -2049,8 +2021,6 @@ body.black {
             background:rgba(255, 255, 255, 0.5);
             backdrop-filter: blur(5px);
             position:absolute;
-            top:1vw;
-            right:1vw;
             top: 50%;
             left:50%;
             transform:translate(-50%,-50%);
@@ -2068,7 +2038,7 @@ body.black {
         cursor:pointer;
       }
 
-      /* 각 작업물 크기대로 설정해주면 됨 !!!! */
+      /* 각 작업물 크기 설정 !!!! */
       .artbox1,
       .artbox3,
       .artbox5 {
@@ -2117,7 +2087,6 @@ body.black {
       width: 100%;
       height: 100%;
       background: rgba(0, 0, 0, 0.8);
-      // padding: 150px 0px;
       justify-content: center;
       align-items: center;
       position: fixed;
@@ -2141,22 +2110,17 @@ body.black {
         width: 70%;
         height:50vw;
         margin: 0px auto;
-        // padding: 100px;
-        // background: #fff;
         text-align: center;
         position: relative;
-        // background: #f4f4f4;
         background:#fff;
         display:flex;
         > img {
           width:50%;
           height:50vw;
-          // height:34vw;
           object-fit:cover;
           display: block;
         }
         .modal-right{
-          // width:25vw;
           width:50%;
           display:flex;
           justify-content:center;
@@ -2183,6 +2147,10 @@ body.black {
     }
   }
 
+  /* con5 */
+  /* con5 */
+  /* con5 */
+  /* con5 */
   .con5 {
     width: 100%;
     height: 100vh;
@@ -2211,6 +2179,7 @@ body.black {
       height: 77vh;
       display: flex;
       justify-content: space-between;
+      /* contact 왼쪽 부분 */
       .contact-left {
         width: 50%;
         border-right: 1.5px solid rgba(255, 255, 255, 0.2);
@@ -2242,6 +2211,7 @@ body.black {
           }
         }
       }
+      /* contact 오른쪽 부분 */
       .contact-right {
         width: 50%;
         .contact-h2-wrap {
@@ -2624,6 +2594,7 @@ body.black {
         transform: translateY(0px);
       }
     }
+    /* 무한으로 돌아가는 원 */
     .circle-arrow {
       width: 170px;
       height:170px;
@@ -2696,7 +2667,7 @@ body.black {
       .con1-text {
         p {
           font-size: 16px;
-          margin:40px 0px 30px;
+          margin:30px 0px;
           br{
             display:none;
           }
@@ -2878,16 +2849,43 @@ body.black {
         }
 
         /* 마우스 올리면 웹페이지 보이게 하기 */
-        .web-img:hover img {
-          animation: down 15s infinite;
+        .web-img1:hover img {
+          animation: web1 12s infinite;
         }
-        @keyframes down {
+        @keyframes web1 {
           0% {
             margin-top: 0px;
           }
           50% {
-            // margin-top: calc(-3293px + 22vw);
-            transform: translateY(-82%);
+            transform: translateY(-81.5%);
+          }
+          100% {
+            margin-top: 0px;
+          }
+        }
+        .web-img2:hover img {
+          animation: web2 16s infinite;
+        }
+        @keyframes web2 {
+          0% {
+            margin-top: 0px;
+          }
+          50% {
+            transform: translateY(-88%);
+          }
+          100% {
+            margin-top: 0px;
+          }
+        }
+        .web-img3:hover img {
+          animation: web3 8s infinite;
+        }
+        @keyframes web3 {
+          0% {
+            margin-top: 0px;
+          }
+          50% {
+            transform: translateY(-72%);
           }
           100% {
             margin-top: 0px;
@@ -2928,8 +2926,6 @@ body.black {
               transition: 0.8s;
 
               &:hover {
-                // background: #e8e08b;
-                // border: 1px solid #ded685;
                 background: #111;
                 color: #fff;
               }
@@ -2943,8 +2939,6 @@ body.black {
             background: #fff;
             transition: 0.8s;
             &:hover {
-              // background: #e8e08b;
-              // border: 1px solid #ded685;
               background: #111;
               color: #fff;
             }
@@ -2981,8 +2975,6 @@ body.black {
       height: 100%;
       background: rgba(0, 0, 0, 0.7);
       padding: 40px 0px;
-      // justify-content: center;
-      // align-items: center;
       position: fixed;
       top: 0px;
       left: 0px;
@@ -2992,8 +2984,6 @@ body.black {
       .modal-content {
         width: 90%;
         margin: 0px auto;
-        // padding: 100px;
-        // background: #fff;
         border-radius: 50px;
         text-align: center;
         position: relative;
@@ -3023,9 +3013,6 @@ body.black {
     .con4-main-text {
       width: 80%;
       text-align: right;
-      // display: flex;
-      // justify-content: space-between;
-      // align-items: end;
       margin: 0px auto 30px;
       > h2 {
         text-transform: uppercase;
@@ -3050,6 +3037,8 @@ body.black {
         transform: translateY(100%);
       }
     }
+
+    /* 작업물 wrap */
     .artbox-wrap {
       height: 150vw;
       position: relative;
@@ -3090,9 +3079,6 @@ body.black {
             width: 100%;
             height: 100%;
             transition:0.6s;
-            // &:hover{
-            //   transform:scale(1.05);
-            // }
           }
           /* 마우스 호버시 나오는 클릭버튼 */
           .front .click{
@@ -3109,8 +3095,6 @@ body.black {
             transform:translate(-50%,-50%);
             font-size:3vw;
             text-align:center;
-            
-            // display:none;
           }
           .back{
             transform:rotateY(180deg);
@@ -3122,7 +3106,7 @@ body.black {
         position: absolute;
       }
 
-      /* 각 작업물 크기대로 설정해주면 됨 !!!! */
+      /* 각 작업물 크기 설정 !!!! */
       .artbox1,
       .artbox3,
       .artbox5 {
@@ -3186,26 +3170,22 @@ body.black {
           width:75%;
           
           >img{
-            height:65vw;
+            height:63vw;
           }
         }
       }
       .modal-content {
         width: 75%;
         margin: 0px auto;
-        // padding: 100px;
         text-align: center;
         position: relative;
         background:#fff;
-        // display:flex;
         > img {
           width: 100%;
-          height: 82vw;
-          // object-fit:cover;
+          height: 85vw;
           display: block;
         }
         .modal-right{
-          // width:25vw;
           width:100%;
           display:flex;
           justify-content:center;
@@ -3261,6 +3241,7 @@ body.black {
       height: 77vh;
       display: flex;
       justify-content: space-between;
+      /* contact 왼쪽 부분 */
       .contact-left {
         width: 50%;
         border-right: 1.5px solid rgba(255, 255, 255, 0.2);
@@ -3294,6 +3275,7 @@ body.black {
           }
         }
       }
+      /* contact 오른쪽 부분 */
       .contact-right {
         width: 50%;
         .contact-h2-wrap {

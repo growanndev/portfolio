@@ -1,4 +1,8 @@
 $(function () {
+
+
+
+
   /* 커스텀 cursor */
   const cursor = document.querySelector(".cursor");
 
@@ -8,13 +12,26 @@ $(function () {
   };
   window.addEventListener("mousemove", animateCursor);
 
+  
+
+
   /* 로드 페이지 */
   setTimeout(function () {
     $(".load-page").css({ display: "none" });
-    setTimeout(function () {
-      $(".wrap").css({ overflow: "visible" });
-    }, 200);
   }, 1400);
+
+   //로드 페이지 1400 소요
+  // 로드 페이지 후 비주얼 메인 글자 나오는 효과
+  
+  setTimeout(function () {
+    $(".right").addClass("on");
+    $(".left").addClass("on");
+  }, 1700);
+
+
+
+
+
 
   /* 햄버거바 클릭하면 메뉴 페이지 나옴 */
   let hamClick = 0;
@@ -37,15 +54,7 @@ $(function () {
     $(".menu-page").toggleClass("active");
   });
 
-  //로드 페이지 약 1600 소요
-  // 로드 페이지 후 비주얼 부분 나오는 효과
-  setTimeout(function () {
-    $(".right").addClass("on");
-    $(".left").addClass("on");
-    // $(".header").stop().animate({ opacity: 1 }, 1000);
-
-    // $('.visual-main-text').stop().animate({opacity:1});
-  }, 1700);
+ 
 
   /* con2 skill-list 마우스 올리면 늘어나며 내용 보이는 효과 */
   $(".skill-list li").mouseenter(function () {
@@ -98,7 +107,6 @@ $('.artbox').click(function(){
   $(window).scroll(function () {
     let scroll = $(window).scrollTop();
 
-    // console.log(scroll);
 
     // 스크롤 함수안에 넣으면 됨
     let baseline = -350;
@@ -188,6 +196,8 @@ $('.artbox').click(function(){
     $(".right").css({ transform: `translateX(${scroll}px)` });
     $(".left").css({ transform: `translateX(-${scroll}px)` });
 
+
+
     /* con1 메인텍스트 about me 하나씩 올라옴 */
     if (scroll > con1 + baseline) {
       $(".con1-main-text h2:nth-of-type(1) span").each(function (
@@ -261,6 +271,8 @@ $('.artbox').click(function(){
       
     }
 
+
+    /* 포트폴리오 하나씩 나옴 */
     let port1 = $(".port1").offset().top;
     let port2 = $(".port2").offset().top;
     let port3 = $(".port3").offset().top;
@@ -292,6 +304,8 @@ $('.artbox').click(function(){
        움직임 */
 
     $(window).resize(function() {
+
+      /* pc, 태블릿 */
         if($(window).width() > 767) {
           if (scroll > con4) {
             $(".artbox1").css({
@@ -308,6 +322,8 @@ $('.artbox').click(function(){
             });
           }
         } else {
+
+          /* 모바일 */ 
           if (scroll > con4) {
             $(".artbox1").css({
               left: 4 + scroll / 900 + "vw",

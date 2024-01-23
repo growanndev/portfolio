@@ -44,7 +44,7 @@ body {
     transform: translateY(0px);
   }
 }
-/* body 스크롤에 따라 배경색 검은색으로 바뀌기 */
+/* 스크롤에 따라 body(배경색) 검은색으로 바뀌기 */
 body {
   transition: 1s;
 }
@@ -64,6 +64,7 @@ body.black {
 /* pc */
 /* pc */
 @media (min-width: 1221px) {
+  /* 커스텀 커서 */
   body {
     cursor: none;
   }
@@ -120,6 +121,10 @@ body.black {
     /* con2 */
     /* con3 */
     /* con4 : artwork  */
+    /* con5 */
+    /* con5 */
+    /* con5 */
+    /* con5 */
   }
   .wrap > .header {
     width: 100%;
@@ -198,6 +203,7 @@ body.black {
     gap: 5vh;
     transition: 1s;
     /* 햄버거바 누르면 나오는 !!! menu-page !!!! 헤더*/
+    /* 메뉴 페이지 눌렀을때 활성화 */
   }
   .wrap .menu-page .header {
     width: 100%;
@@ -279,6 +285,8 @@ body.black {
     flex-direction: column;
     gap: 120px;
     overflow-x: hidden;
+    /* visual 바 쌓이는 부분 */
+    /* 무한으로 돌아가는 원 */
   }
   .wrap .visual .visual-main-text > h1 {
     text-transform: uppercase;
@@ -512,25 +520,6 @@ body.black {
     opacity: 1;
     transform: translateY(-10px);
   }
-  .wrap .con1 .more {
-    width: 240px;
-    margin: 0px auto;
-  }
-  .wrap .con1 .more a {
-    font-size: 2.4em;
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    width: 100%;
-    padding: 10px 0px;
-    border: 1px solid #111;
-    border-radius: 70px;
-    transition: 0.7s;
-  }
-  .wrap .con1 .more a:hover {
-    background: #000;
-    color: #fff;
-  }
   .wrap .con2 {
     margin-bottom: 100px;
     /* con2 스크롤 효과 */
@@ -682,15 +671,43 @@ body.black {
   .wrap .con3 .port-list li .web-img img {
     width: 100%;
   }
-  .wrap .con3 .port-list li .web-img:hover img {
-    animation: down 15s infinite;
+  .wrap .con3 .port-list li .web-img1:hover img {
+    animation: web1 12s infinite;
   }
-  @keyframes down {
+  @keyframes web1 {
     0% {
       margin-top: 0px;
     }
     50% {
-      transform: translateY(-82%);
+      transform: translateY(-81.5%);
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+  .wrap .con3 .port-list li .web-img2:hover img {
+    animation: web2 16s infinite;
+  }
+  @keyframes web2 {
+    0% {
+      margin-top: 0px;
+    }
+    50% {
+      transform: translateY(-88%);
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+  .wrap .con3 .port-list li .web-img3:hover img {
+    animation: web3 8s infinite;
+  }
+  @keyframes web3 {
+    0% {
+      margin-top: 0px;
+    }
+    50% {
+      transform: translateY(-72%);
     }
     100% {
       margin-top: 0px;
@@ -698,11 +715,12 @@ body.black {
   }
   .wrap .con3 .port-list li > h3 {
     font-size: 2.4em;
-    margin: 35px 0px 20px;
+    margin-top: 35px;
   }
   .wrap .con3 .port-list li .tag {
     font-size: 16px;
     font-weight: 900;
+    margin: 15px 0px;
   }
   .wrap .con3 .port-list li .tag span {
     margin: 0px 15px;
@@ -800,6 +818,7 @@ body.black {
     width: 100%;
     padding-top: 50px;
     margin: 150px 0px 150px;
+    /* 작업물 wrap */
     /* 스크롤에 따른 효과 */
     /*  artbox 모달박스 공통 적용 */
   }
@@ -832,7 +851,7 @@ body.black {
     height: 60vw;
     position: relative;
     transition: 0.8s 0.8s;
-    /* 각 작업물 크기대로 설정해주면 됨 !!!! */
+    /* 각 작업물 크기 설정 !!!! */
     /* 작업물 위치 */
   }
   .wrap .con4 .artbox-wrap .artbox {
@@ -874,21 +893,15 @@ body.black {
     transition: 0.6s;
   }
   .wrap .con4 .artbox-wrap .artbox .card-wrap .front .click {
-    width: 3vw;
-    height: 3vw;
     width: 7vw;
     height: 7vw;
     text-align: center;
-    border-radius: 3vw;
     border-radius: 10vw;
-    line-height: 3vw;
     line-height: 7vw;
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     position: absolute;
-    top: 1vw;
-    right: 1vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -998,13 +1011,14 @@ body.black {
     width: 100%;
     height: 100vh;
     color: #fff;
+    /* contact 왼쪽 부분 */
   }
   .wrap .con5 .vision {
     height: 23vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 5vw;
+    padding: 30px 10vw 30px 5vw;
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
     border-top: 1.5px solid rgba(255, 255, 255, 0.2);
   }
@@ -1022,6 +1036,7 @@ body.black {
     height: 77vh;
     display: flex;
     justify-content: space-between;
+    /* contact 오른쪽 부분 */
   }
   .wrap .con5 .contact .contact-left {
     width: 50%;
@@ -1134,6 +1149,10 @@ body.black {
     /* con2 */
     /* con3 */
     /* con4 : artwork  */
+    /* con5 */
+    /* con5 */
+    /* con5 */
+    /* con5 */
   }
   .wrap > .header {
     width: 100%;
@@ -1293,6 +1312,8 @@ body.black {
     flex-direction: column;
     gap: 120px;
     overflow-x: hidden;
+    /* visual 바 쌓이는 부분 */
+    /* 무한으로 돌아가는 원 */
   }
   .wrap .visual .visual-main-text > h1 {
     text-transform: uppercase;
@@ -1530,25 +1551,6 @@ body.black {
     opacity: 1;
     transform: translateY(-5px);
   }
-  .wrap .con1 .more {
-    width: 240px;
-    margin: 0px auto;
-  }
-  .wrap .con1 .more a {
-    font-size: 2.4em;
-    text-align: center;
-    display: block;
-    text-transform: uppercase;
-    width: 100%;
-    padding: 10px 0px;
-    border: 1px solid #111;
-    border-radius: 70px;
-    transition: 0.7s;
-  }
-  .wrap .con1 .more a:hover {
-    background: #000;
-    color: #fff;
-  }
   .wrap .con2 {
     margin-bottom: 100px;
     /* con2 스크롤 효과 */
@@ -1700,15 +1702,43 @@ body.black {
   .wrap .con3 .port-list li .web-img img {
     width: 100%;
   }
-  .wrap .con3 .port-list li .web-img:hover img {
-    animation: down 15s infinite;
+  .wrap .con3 .port-list li .web-img1:hover img {
+    animation: web1 11s infinite;
   }
-  @keyframes down {
+  @keyframes web1 {
     0% {
       margin-top: 0px;
     }
     50% {
       transform: translateY(-82%);
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+  .wrap .con3 .port-list li .web-img2:hover img {
+    animation: web2 16s infinite;
+  }
+  @keyframes web2 {
+    0% {
+      margin-top: 0px;
+    }
+    50% {
+      transform: translateY(-89%);
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+  .wrap .con3 .port-list li .web-img3:hover img {
+    animation: web3 8s infinite;
+  }
+  @keyframes web3 {
+    0% {
+      margin-top: 0px;
+    }
+    50% {
+      transform: translateY(-72%);
     }
     100% {
       margin-top: 0px;
@@ -1819,6 +1849,7 @@ body.black {
     width: 100%;
     padding-top: 50px;
     margin: 150px 0px 150px;
+    /* 작업물 wrap */
     /* 스크롤에 따른 효과 */
     /*  artbox 모달박스 공통 적용 */
   }
@@ -1851,7 +1882,7 @@ body.black {
     height: 76vw;
     position: relative;
     transition: 0.8s 0.8s;
-    /* 각 작업물 크기대로 설정해주면 됨 !!!! */
+    /* 각 작업물 크기 설정 !!!! */
     /* 작업물 위치 */
   }
   .wrap .con4 .artbox-wrap .artbox {
@@ -1902,8 +1933,6 @@ body.black {
     -webkit-backdrop-filter: blur(5px);
             backdrop-filter: blur(5px);
     position: absolute;
-    top: 1vw;
-    right: 1vw;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -2040,6 +2069,8 @@ body.black {
     height: 77vh;
     display: flex;
     justify-content: space-between;
+    /* contact 왼쪽 부분 */
+    /* contact 오른쪽 부분 */
   }
   .wrap .con5 .contact .contact-left {
     width: 50%;
@@ -2321,6 +2352,7 @@ body.black {
     gap: 120px;
     overflow-x: hidden;
     /* visual bar 쌓이는 구역 */
+    /* 무한으로 돌아가는 원 */
   }
   .wrap .visual .visual-main-text > h1 {
     text-transform: uppercase;
@@ -2508,7 +2540,7 @@ body.black {
   }
   .wrap .con1 .con1-content .con1-text p {
     font-size: 16px;
-    margin: 40px 0px 30px;
+    margin: 30px 0px;
   }
   .wrap .con1 .con1-content .con1-text p br {
     display: none;
@@ -2680,15 +2712,43 @@ body.black {
   .wrap .con3 .port-list li .web-img img {
     width: 100%;
   }
-  .wrap .con3 .port-list li .web-img:hover img {
-    animation: down 15s infinite;
+  .wrap .con3 .port-list li .web-img1:hover img {
+    animation: web1 12s infinite;
   }
-  @keyframes down {
+  @keyframes web1 {
     0% {
       margin-top: 0px;
     }
     50% {
-      transform: translateY(-82%);
+      transform: translateY(-81.5%);
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+  .wrap .con3 .port-list li .web-img2:hover img {
+    animation: web2 16s infinite;
+  }
+  @keyframes web2 {
+    0% {
+      margin-top: 0px;
+    }
+    50% {
+      transform: translateY(-88%);
+    }
+    100% {
+      margin-top: 0px;
+    }
+  }
+  .wrap .con3 .port-list li .web-img3:hover img {
+    animation: web3 8s infinite;
+  }
+  @keyframes web3 {
+    0% {
+      margin-top: 0px;
+    }
+    50% {
+      transform: translateY(-72%);
     }
     100% {
       margin-top: 0px;
@@ -2799,6 +2859,7 @@ body.black {
     width: 100%;
     padding-top: 50px;
     margin: 100px 0px 150px;
+    /* 작업물 wrap */
     /* 스크롤에 따른 효과 */
     /*  artbox 모달박스 공통 적용 */
   }
@@ -2832,7 +2893,7 @@ body.black {
     height: 150vw;
     position: relative;
     transition: 0.8s 0.8s;
-    /* 각 작업물 크기대로 설정해주면 됨 !!!! */
+    /* 각 작업물 크기 설정 !!!! */
     /* 작업물 위치 */
   }
   .wrap .con4 .artbox-wrap .artbox {
@@ -2948,7 +3009,7 @@ body.black {
     width: 75%;
   }
   .wrap .con4 .modal-wrap:nth-child(even) .modal-content > img {
-    height: 65vw;
+    height: 63vw;
   }
   .wrap .con4 .modal-wrap .modal-content {
     width: 75%;
@@ -2959,7 +3020,7 @@ body.black {
   }
   .wrap .con4 .modal-wrap .modal-content > img {
     width: 100%;
-    height: 82vw;
+    height: 85vw;
     display: block;
   }
   .wrap .con4 .modal-wrap .modal-content .modal-right {
@@ -3014,6 +3075,8 @@ body.black {
     height: 77vh;
     display: flex;
     justify-content: space-between;
+    /* contact 왼쪽 부분 */
+    /* contact 오른쪽 부분 */
   }
   .wrap .con5 .contact .contact-left {
     width: 50%;
