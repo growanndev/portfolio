@@ -2168,7 +2168,7 @@ body.black {
     text-align: center;
     color: #fff;
     text-transform: uppercase;
-    font-size: 4.7vw;
+    font-size: 4.9vw;
     overflow: hidden;
     font-weight: 300;
   }
@@ -2195,7 +2195,7 @@ body.black {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0px 30px;
+    padding: 0px 25px;
     position: fixed;
     top: 30px;
     left: 0px;
@@ -2219,7 +2219,7 @@ body.black {
   }
   .wrap > .header .ham-menu p {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
   }
   .wrap > .header .ham-menu .hambar {
     width: 25px;
@@ -2282,6 +2282,7 @@ body.black {
   }
   .wrap .menu-page .header h2 {
     font-size: 14px;
+    font-weight: 300;
   }
   .wrap .menu-page .header h2 a {
     color: #fff;
@@ -2295,7 +2296,7 @@ body.black {
   }
   .wrap .menu-page .header .ham-menu p {
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
   }
   .wrap .menu-page .header .ham-menu .hambar {
     width: 25px;
