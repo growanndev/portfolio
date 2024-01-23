@@ -596,7 +596,7 @@ body.black {
   }
   .wrap .con2 .skill-list li.active {
     height: 130px;
-    padding: 10px 0px 10px 15vw;
+    padding: 10px 15px 10px 15vw;
   }
   .wrap .con2 .skill-list li.active .skill-bg {
     width: 100%;
