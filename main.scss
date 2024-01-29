@@ -208,12 +208,12 @@ body.black {
       width: 100%;
       display: flex;
       justify-content: space-between;
-      padding: 0px 20px 0px 50px;
+      padding: 0px 50px;
       position: absolute;
       top: 30px;
       left: 0px;
       h2 {
-        font-size: 1.5vw;
+        font-size: 30px;
         a {
           color: #fff;
         }
@@ -226,14 +226,14 @@ body.black {
         cursor: pointer;
         p {
           color: #fff;
-          font-size: 1.5vw;
+          font-size: 30px;
         }
         .hambar {
-          width: 3.5vw;
-          height: 1.7vw;
+          width: 40px;
+          height: 30px;
           position: relative;
           li {
-            width: 60%;
+            width: 100%;
             height: 3px;
             background: #fff;
             position: absolute;
